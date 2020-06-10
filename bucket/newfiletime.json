@@ -1,0 +1,15 @@
+{
+    "version": "4.11",
+    "description": "NewFileTime is a Windows tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system.
+",
+    "homepage": "http://softwareok.com/?seite=Microsoft/NewFileTime",
+    "license": "GPL-3.0-only",
+    "url": "https://www.softwareok.com/Download/NewFileTime_x64.zip",
+    "bin": "NewFileTime_x64.exe",
+    "shortcuts": [
+        [
+            "NewFileTime_x64.exe",
+            "NewFileTime"
+        ]
+    ]
+}

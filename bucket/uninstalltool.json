@@ -1,0 +1,12 @@
+{
+    "homepage": "https://www.crystalidea.com/uninstall-tool",
+    "version": "3.5.9.5660",
+    "url": "https://attachments-cdn.shimo.im/7IKtL5UVLoAnNrcl/UninstallTool.7z?attname=UninstallTool.7z",
+    "bin": "UninstallToolPortable.exe",
+    "shortcuts": [
+        [
+            "UninstallToolPortable.exe",
+            "UninstallTool"
+        ]
+    ]
+}

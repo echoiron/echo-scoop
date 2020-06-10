@@ -1,0 +1,14 @@
+{
+    "version": "9.3.0.8540",
+    "description": "超好用的看图软件，你值得拥有！",
+    "homepage": "http://pic.2345.cc/",
+    "license": "GPL-3.0-only",
+    "url": "https://attachments-cdn.shimo.im/UJ3pWKWfSQEiVfxF.7z?attname=2345Pic.7z",
+    "bin": "2345PicViewer.exe",
+    "shortcuts": [
+        [
+            "2345PicViewer.exe",
+            "2345Pic"
+        ]
+    ]
+}

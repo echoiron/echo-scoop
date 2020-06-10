@@ -1,0 +1,12 @@
+{
+    "homepage": "http://www.faststone.org/FSCaptureDetail.htm",
+    "version": "9.3",
+    "url": "https://attachments-cdn.shimo.im/Jy58DBHkVIUiNxiu/FSCapture_Ver.9.3_Chs.7z?attname=FSCapture_Ver.9.3_Chs.7z",
+    "bin": "FSCapture.exe",
+    "shortcuts": [
+        [
+            "FSCapture.exe",
+            "FSCapture"
+        ]
+    ]
+}

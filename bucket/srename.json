@@ -1,0 +1,15 @@
+{
+    "homepage": "https://web.archive.org/web/20150313163040/http://enka.javaws.com/torble/software.php",
+    "license": "GPL-3.0-only",
+    "description": "ÍÏ°Ñ¸üÃûÆ÷.",
+    "version": "1.98",
+    "url": "https://attachments-cdn.shimo.im/jC9sXyOOCjuZOO9g.zip?attname=SRename.zip",
+    "extract_dir": "SRename",
+    "bin": "xTools.exe",
+    "shortcuts": [
+        [
+            "xTools.exe",
+            "xTools"
+        ]
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "version": "2.9.2",
+    "homepage": "https://www.lanzous.com/b405544/",
+    "description": "飞扬时空制作的精选实用小工具合集，通过 CLaunch 软件快速调用",
+    "license": "Freeware",
+    "url": "https://code.aliyun.com/sev7n/drug/raw/master/ows/AcmeKit_v2.9.2_2.exe#/dl.7z",
+    "bin": "CLaunch.exe",
+    "shortcuts": [
+        [
+            "CLaunch.exe",
+            "CLaunch"
+        ]
+    ]
+}

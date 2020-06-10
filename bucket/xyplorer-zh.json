@@ -1,0 +1,14 @@
+{
+    "version": "20.90.0500",
+    "description": "XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It¡¯s fast, light, and portable.",
+    "homepage": "https://www.xyplorer.com/",
+    "license": "GPL-3.0-only",
+    "url": "https://attachments-cdn.shimo.im/0qr3OAAHCfx7HaNl.zip?attname=xyplorer.zip",
+    "bin": "XYplorer.exe",
+    "shortcuts": [
+        [
+            "XYplorer.exe",
+            "XYplorer"
+        ]
+    ]
+}

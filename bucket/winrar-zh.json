@@ -1,0 +1,13 @@
+{
+    "homepage": "https://rarlab.com/",
+    "description": "trouble",
+    "version": "5.80",
+    "url": "https://code.aliyun.com/chenmigo/scuup/raw/marron/mu/WinRAR_5.80_x64_SC_2.exe",
+    "bin": "WinRAR.exe",
+    "shortcuts": [
+        [
+            "WinRAR.exe",
+            "WinRAR"
+        ]
+    ]
+}

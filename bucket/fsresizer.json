@@ -1,0 +1,12 @@
+{
+    "homepage": "https://www.faststone.org/FSResizerDetail.htm",
+    "version": "4.3",
+    "url": "https://code.aliyun.com/chenmigo/scuup/raw/marron/mu/FastStonePhotoResizer.7z",
+    "bin": "FSResizer.exe",
+    "shortcuts": [
+        [
+            "FSResizer.exe",
+            "FSResizer"
+        ]
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "version": "5.5.2.547",
+    "description": "清理注册表和磁盘垃圾文件，保护个人隐私记录，提高电脑使用安全。优化系统、提高Windows系统运行速度最好的选择！",
+    "homepage": "https://www.wisecleaner.com.cn/wise-care-365.html",
+    "license": "GPL-3.0-only",
+    "url": "https://attachments-cdn.shimo.im/Fe6JNKcLEpkNykPW/WiseCare365.7z?attname=WiseCare365.7z",
+    "bin": "WiseCare365.exe",
+    "shortcuts": [
+        [
+            "WiseCare365.exe",
+            "WiseCare365"
+        ]
+    ]
+}
