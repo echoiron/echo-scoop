@@ -1,0 +1,15 @@
+{
+    "homepage": "https://www.scootersoftware.com/download.php",
+    "license": "GPL-3.0-only",
+    "description": "Beyond Compare",
+    "version": "4.3.4.24657",
+    "url": "https://attachments-cdn.shimo.im/5T5GMXOrduGJ0KBV.7z?attname=beyondcompare4.3.4.24657.7z",
+    "extract_dir": "SRename",
+    "bin": "BCompare.exe",
+    "shortcuts": [
+        [
+            "BCompare.exe",
+            "BeyondComparePro"
+        ]
+    ]
+}
