@@ -1,9 +1,9 @@
 {
-    "version": "0.10.4",
+    "version": "1.0.0",
     "description": "A Windows GUI based on Clash.",
     "homepage": "https://docs.cfw.lbyczf.com/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.10.4/Clash.for.Windows-0.10.4-win.7z",
+    "url": "https://github.com/Dreamacro/clash/releases/download/v1.0.0/clash-windows-amd64-v1.0.0.zip",
     "bin": "Clash for Windows.exe",
     "shortcuts": [
         [
