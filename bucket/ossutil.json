@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "ossutil64.exe",
-            "ossutil"
+            "ossutil64"
         ]
     ]
 }
