@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/Molunerfinn/PicGo",
     "description": "a tool of image hosting client",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.2.2/PicGo-Setup-2.2.2.exe",
     "bin": "PicGo.exe",
     "shortcuts": [
