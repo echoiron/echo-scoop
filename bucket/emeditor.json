@@ -1,7 +1,7 @@
 {
     "homepage": "https://zh-cn.emeditor.com/download/",
-    "version": "19.9.4",
-    "url": "https://emeditor.blob.core.windows.net/emed64_19.9.4_portable.zip",
+    "version": "20.0.0",
+    "url": "https://support.emeditor.com/en/downloads/latest/portable/64#/dl.7z",
     "bin": "EmEditor.exe",
     "shortcuts": [
         [
