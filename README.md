@@ -1,7 +1,7 @@
 
 # echo-scoop
 
-### Bucket installation method
+### How to install bucket
 
 ```bash
 scoop bucket add echo https://github.com/echoiron/echo-scoop
