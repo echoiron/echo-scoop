@@ -1,9 +1,9 @@
 {
     "homepage": "https://help.aliyun.com/document_detail/50452.html",
-    "license": "GPL-3.0-only",
+    "license": "BSD-3-Clause",
     "description": "ossutil是以命令行方式管理OSS数据的工具，提供方便、简洁、丰富的存储空间（Bucket）和文件（Object）管理命令，支持Windows、Linux、 Mac平台",
-    "version": "1.6.16",
-    "url": "http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64.zip",
+    "version": "1.6.18",
+    "url": "http://gosspublic.alicdn.com/ossutil/1.6.18/ossutil64#/dl.7z",
     "extract_dir": "ossutil64",
     "bin": "ossutil64.exe",
     "shortcuts": [
