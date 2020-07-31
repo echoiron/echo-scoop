@@ -4,6 +4,7 @@
     "homepage": "https://www.xyplorer.com/",
     "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/J3TP6mCwMqD0oQ1e.7z?attname=xyplorer.7z",
+    "extract_dir": "XYplorer",
     "bin": "XYplorer.exe",
     "shortcuts": [
         [
