@@ -3,7 +3,11 @@
     "description": "Notepad2 is a light-weight Scintilla-based text editor for Windows with syntax highlighting, code folding, auto-completion and API list for about 70 programming languages/documents, bundled with file browser plugin metapath and dark theme.",
     "license": "BSD-3-Clause",
     "version": "4.20.07r3180",
-    "url": "https://github.com/zufuliu/notepad2/releases/download/v4.20.07.3180/Notepad2_zh-Hans_x64_v4.20.07r3180.zip",
+    "url": [
+        "https://github.com/zufuliu/notepad2/releases/download/v4.20.07.3180/Notepad2_zh-Hans_x64_v4.20.07r3180.zip",
+        "http://xiao.cdnxin.top/data/scripts/bat/1_Replace_Notepad.bat",
+        "http://xiao.cdnxin.top/data/scripts/bat/2_Restore Notepad.bat"
+    ],
     "bin": "Notepad2.exe",
     "shortcuts": [
         [
