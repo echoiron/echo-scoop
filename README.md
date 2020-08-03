@@ -13,6 +13,6 @@ scoop bucket add echo https://github.com/echoiron/echo-scoop
 scoop install echo/app_name
 
 # e.g.
-scoop install echo/fscapture-zh
+scoop install echo/fscapture
 
 ```
