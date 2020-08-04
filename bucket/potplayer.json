@@ -2,8 +2,8 @@
     "homepage": "https://potplayer.daum.net",
     "license": "GPL-3.0-only",
     "description": "PotPlayer（韩语：팟플레이어），是KMPlayer的原作者姜勇囍进入Daum公司后的新一代作品，目前仍有更新。由于采用Delphi编译程序的KMPlayer有一些弊端，姜勇囍为改进播放器本身的一些性能而重新用VC++进行构架。",
-    "version": "1.7.21239",
-    "url": "https://code.aliyun.com/niiming/mls/raw/master/lcb/PotPlayer64.zip",
+    "version": "1.7.21280",
+    "url": "https://code.aliyun.com/niiming/digital/raw/master/onesoft/PotPlayer64.7z",
     "extract_dir": "PotPlayer64",
     "bin": "PotPlayerMini64.exe",
     "shortcuts": [
