@@ -2,10 +2,10 @@
     "homepage": "https://www.sumatrapdfreader.org/",
     "version": "3.2",
     "url": "https://www.sumatrapdfreader.org/dl2/SumatraPDF-3.2-64.zip",
-    "bin": "SumatraPDF.exe",
+    "bin": "SumatraPDF-3.2-64.exe",
     "shortcuts": [
         [
-            "SumatraPDF.exe",
+            "SumatraPDF-3.2-64.exe",
             "SumatraPDF"
         ]
     ]
