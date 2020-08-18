@@ -3,7 +3,11 @@
     "description": "A Notepad2 fork, a fast and light-weight Notepad-like text editor with syntax highlighting.",
     "license": "BSD-3-Clause",
     "version": "4.2.25.998",
-    "url": "https://attachments-cdn.shimo.im/9q6XsSFHuS0nRC7d.zip?attname=notepad2-mod4.2.25.998.zip",
+    "url": [
+        "https://attachments-cdn.shimo.im/9q6XsSFHuS0nRC7d.zip?attname=notepad2-mod4.2.25.998.zip",
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/1_Replace_Notepad.bat",
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/2_Restore%20Notepad.bat"
+    ],
     "bin": "Notepad2.exe",
     "shortcuts": [
         [

@@ -5,8 +5,8 @@
     "version": "4.20.08r3252",
     "url": [
         "https://github.com/zufuliu/notepad2/releases/download/v4.20.08r3252/Notepad2_zh-Hans_x64_v4.20.08r3252.zip",
-        "http://xiao.cdnxin.top/data/scripts/bat/1_Replace_Notepad.bat",
-        "http://xiao.cdnxin.top/data/scripts/bat/2_Restore Notepad.bat"
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/1_Replace_Notepad.bat",
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/2_Restore%20Notepad.bat"
     ],
     "bin": "Notepad2.exe",
     "shortcuts": [
