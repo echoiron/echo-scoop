@@ -1,6 +1,8 @@
 {
-    "homepage": "https://www.crystalidea.com/uninstall-tool",
     "version": "3.5.10.5670",
+    "description": "Fast and Powerful Uninstaller for Complete Removal of Programs",
+    "homepage": "https://www.crystalidea.com/uninstall-tool",
+    "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/So5mJaWMZbPDJvsO.zip?attname=Uninstall_Tool_3.5.10.5670.zip",
     "bin": "UninstallToolPortable.exe",
     "shortcuts": [

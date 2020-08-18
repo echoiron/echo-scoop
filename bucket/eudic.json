@@ -1,7 +1,8 @@
 {
-    "homepage": "https://www.eudic.net/",
     "version": "12.4",
-    "license": "freeware",
+    "description": "权威的英语词典软件 英语学习者必备的工具",
+    "homepage": "https://www.eudic.net/",
+    "license": "BSD-3-Clause",
     "url": "http://static.frdic.com/pkg/eudic_win.zip",
     "installer": {
         "script": [

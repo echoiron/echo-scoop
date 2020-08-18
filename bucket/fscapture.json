@@ -1,6 +1,8 @@
 {
-    "homepage": "http://www.faststone.org/FSCaptureDetail.htm",
     "version": "9.3",
+    "description": "FastStone Capture is a powerful, lightweight, yet full-featured screen capture tool and screen video recorder",
+    "homepage": "http://www.faststone.org/FSCaptureDetail.htm",
+    "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/Jy58DBHkVIUiNxiu/FSCapture_Ver.9.3_Chs.7z?attname=FSCapture_Ver.9.3_Chs.7z",
     "bin": "FSCapture.exe",
     "shortcuts": [

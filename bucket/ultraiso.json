@@ -2,7 +2,7 @@
     "version": "9.7.5.3716",
     "description": "软碟通是一款功能强大而又方便实用的光盘映像文件制作/编辑/转换工具，它可以直接编辑ISO文件和从ISO中提取文件和目录，也可以从CD-ROM制作光盘映像或者将硬盘上的文件制作成ISO文件。",
     "homepage": "https://www.ultraiso.com/",
-    "license": "GPL-3.0-only",
+    "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/X9AkyPHGHj0GW4TH.7z?attname=UltraISO.7z",
     "bin": "UltraISO.exe",
     "shortcuts": [

@@ -1,7 +1,8 @@
 {
     "version": "4.0.8",
-    "homepage": "https://www.wxb.com/wetool",
     "description": "微信社群管理工具",
+    "homepage": "https://www.wxb.com/wetool",
+    "license": "BSD-3-Clause",
     "url": "https://s.weituibao.com/wetool/WeToolSetup4.0.8.exe#/dl.7z",
     "installer": {
         "script": [

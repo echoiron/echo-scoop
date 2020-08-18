@@ -1,7 +1,7 @@
 {
     "version": "1.5.3",
-    "homepage": "https://www.foobar2000.org/",
     "description": "An advanced freeware audio player for the Windows platform.",
+    "homepage": "https://www.foobar2000.org/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.foobar2000.org/license"

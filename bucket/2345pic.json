@@ -2,7 +2,7 @@
     "version": "9.3.0.8549",
     "description": "超好用的看图软件，你值得拥有！",
     "homepage": "http://pic.2345.cc/",
-    "license": "GPL-3.0-only",
+    "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/lZINunSJmzUdKJEF.7z?attname=2345Pic.7z",
     "bin": "2345PicViewer.exe",
     "shortcuts": [

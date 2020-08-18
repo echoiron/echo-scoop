@@ -1,8 +1,8 @@
 {
-    "homepage": "https://www.scootersoftware.com/download.php",
-    "license": "GPL-3.0-only",
-    "description": "Beyond Compare",
     "version": "4.3.5.24893",
+    "description": "Beyond Compare",
+    "homepage": "https://www.scootersoftware.com/download.php",
+    "license": "BSD-3-Clause",
     "url": "https://code.aliyun.com/niiming/mls/raw/master/lcb/BeyondComparePro4.3.5.24893x64.zip",
     "bin": "BCompare.exe",
     "shortcuts": [

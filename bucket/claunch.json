@@ -2,7 +2,7 @@
     "version": "4.02",
     "description": "CLaunch 是一款快捷启动管理工具，具有轻便小巧、快捷方便、功能丰富的优点",
     "homepage": "http://hp.vector.co.jp/authors/VA018351/en/claunch.html",
-    "license": "GPL-3.0-only",
+    "license": "BSD-3-Clause",
     "url": "https://attachments-cdn.shimo.im/XiiZ94E0qg0zwaz9.zip?attname=CLaunch_Ver.4.02_Chs.zip",
     "extract_dir": "X64",
     "bin": "CLaunch.exe",
