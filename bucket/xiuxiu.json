@@ -1,9 +1,9 @@
 {
-    "version": "6.3.8",
+    "version": "6.3.9.1",
     "description": "美图秀秀是一款很好用的免费图片处理软件，不用学习就会用。",
     "homepage": "https://mt.meipai.com/pc",
     "license": "BSD-3-Clause",
-    "url": "https://code.aliyun.com/niiming/digital/raw/master/onesoft/xiuxiu.7z",
+    "url": "https://code.aliyun.com/niiming/perfect/raw/develop/xiuxiu.7z",
     "bin": "XiuXiu.exe",
     "shortcuts": [
         [
