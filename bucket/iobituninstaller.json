@@ -1,0 +1,14 @@
+{
+    "version": "10.0.2.20",
+    "description": "Completely Uninstall Unwanted Software, Windows Apps & Browser Plug-ins",
+    "homepage": "https://www.iobit.com/en/advanceduninstaller.php",
+    "license": "BSD-3-Clause",
+    "url": "https://carpenters.coding.net/p/carpenter/d/carpenter/git/raw/develop/bbp/iobituninstaller.7z",
+    "bin": "IObitUninstallerPortable.exe",
+    "shortcuts": [
+        [
+            "IObitUninstallerPortable.exe",
+            "IObitUninstaller"
+        ]
+    ]
+}
