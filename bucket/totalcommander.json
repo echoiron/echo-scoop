@@ -1,0 +1,14 @@
+{
+    "version": "9.51.62",
+    "description": "Total Commander, Version is a Shareware file manager for Windows",
+    "homepage": "https://www.ghisler.com/",
+    "license": "BSD-3-Clause",
+    "url": "https://carpenters.coding.net/p/carpenter/d/carpenter/git/raw/develop/bbp/TotalCMD.7z",
+    "bin": "TotalCMD64.exe",
+    "shortcuts": [
+        [
+            "TotalCMD64.exe",
+            "Total Commander"
+        ]
+    ]
+}
