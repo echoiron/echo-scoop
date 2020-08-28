@@ -1,0 +1,14 @@
+{
+    "version": "9.3.7",
+    "description": "An instant messaging software service developed by Tencent",
+    "homepage": "https://im.qq.com/pcqq/",
+    "license": "BSD-3-Clause",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3208:/QQ.7z?authkey=AMrgYkUbsnZUZvo#/dl.7z",
+    "bin": "Bin\\QQ.exe",
+    "shortcuts": [
+        [
+            "Bin\\QQ.exe",
+            "QQ"
+        ]
+    ]
+}
