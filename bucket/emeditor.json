@@ -1,5 +1,5 @@
 {
-    "version": "20.1.0",
+    "version": "20.1.1",
     "description": "world’s fastest text editor.",
     "homepage": "https://www.emeditor.com/download/",
     "license": "BSD-3-Clause",
@@ -10,5 +10,12 @@
             "EmEditor.exe",
             "EmEditor"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.emeditor.com/download/",
+        "regex": "Download latest version: v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://support.emeditor.com/en/downloads/latest/portable/64#/dl.7z"
+    }
 }
