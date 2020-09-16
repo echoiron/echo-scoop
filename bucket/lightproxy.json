@@ -1,21 +1,21 @@
 {
-    "version": "1.1.32",
-    "description": "Cross platform Web debugging proxy",
-    "homepage": "https://github.com/alibaba/lightproxy",
-    "license": "BSD-3-Clause",
-    "url": "https://github.com/alibaba/lightproxy/releases/download/v1.1.32/LightProxy-Setup-1.1.32.exe#/dl.7z",
-    "installer": {
-        "script": [
-            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-            "Move-Item \"$dir\\$PLUGINSDIR\\*.dll\" \"$dir\"",
-            "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
-        ]
-    },
-    "bin": "LightProxy.exe",
-    "shortcuts": [
-        [
-            "LightProxy.exe",
-            "LightProxy"
-        ]
+  "version": "1.1.32",
+  "description": "Cross platform Web debugging proxy",
+  "homepage": "https://github.com/alibaba/lightproxy",
+  "license": "BSD-3-Clause",
+  "url": "https://github.com/alibaba/lightproxy/releases/download/v1.1.32/LightProxy-Setup-1.1.32.exe#/dl.7z",
+  "installer": {
+    "script": [
+      "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+      "Move-Item \"$dir\\$PLUGINSDIR\\*.dll\" \"$dir\"",
+      "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
     ]
+  },
+  "bin": "LightProxy.exe",
+  "shortcuts": [
+    [
+      "LightProxy.exe",
+      "LightProxy"
+    ]
+  ]
 }

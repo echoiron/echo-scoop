@@ -1,35 +1,35 @@
 {
-    "version": "1.5.3",
-    "description": "An advanced freeware audio player for the Windows platform.",
-    "homepage": "https://www.foobar2000.org/",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://www.foobar2000.org/license"
-    },
-    "url": "https://attachments-cdn.shimo.im/EbSltiRtzNMwWXbJ/FB_1.5.3_Asion_20200429000037.exe?attname=FB_1.5.3_Asion_20200429000037.exe#/dl.7z",
-    "notes": [
-        "WARNING: foobar2000 package is reverting back to non-portable installation.",
-        "If you still want portable version, use foobar2000-portable instead.",
-        "If you want to migrate persisted data to portable version",
-        "please rename $persist_dir to \"foobar2000-portable\"."
-    ],
-    "bin": "foobar2000.exe",
-    "shortcuts": [
-        [
-            "foobar2000.exe",
-            "Foobar2000"
-        ]
-    ],
-    "installer": {
-        "script": [
-            "New-Item \"$dir\\user_profiles_enabled\" -Force | Out-Null"
-        ]
-    },
-    "checkver": {
-        "url": "https://www.foobar2000.org/download",
-        "regex": "foobar2000_v([\\d.]+)\\."
-    },
-    "autoupdate": {
-        "url": "https://www.videohelp.com/download/foobar2000_v$version.exe#/dl.7z"
-    }
+  "version": "1.5.3",
+  "description": "An advanced freeware audio player for the Windows platform.",
+  "homepage": "https://www.foobar2000.org/",
+  "license": {
+    "identifier": "Freeware",
+    "url": "https://www.foobar2000.org/license"
+  },
+  "url": "https://attachments-cdn.shimo.im/EbSltiRtzNMwWXbJ/FB_1.5.3_Asion_20200429000037.exe?attname=FB_1.5.3_Asion_20200429000037.exe#/dl.7z",
+  "notes": [
+    "WARNING: foobar2000 package is reverting back to non-portable installation.",
+    "If you still want portable version, use foobar2000-portable instead.",
+    "If you want to migrate persisted data to portable version",
+    "please rename $persist_dir to \"foobar2000-portable\"."
+  ],
+  "bin": "foobar2000.exe",
+  "shortcuts": [
+    [
+      "foobar2000.exe",
+      "Foobar2000"
+    ]
+  ],
+  "installer": {
+    "script": [
+      "New-Item \"$dir\\user_profiles_enabled\" -Force | Out-Null"
+    ]
+  },
+  "checkver": {
+    "url": "https://www.foobar2000.org/download",
+    "regex": "foobar2000_v([\\d.]+)\\."
+  },
+  "autoupdate": {
+    "url": "https://www.videohelp.com/download/foobar2000_v$version.exe#/dl.7z"
+  }
 }

@@ -1,14 +1,14 @@
 {
-    "version": "7.2",
-    "description": "ReNamer is a very powerful and flexible file renaming tool.",
-    "homepage": "https://www.den4b.com/products/renamer",
-    "license": "BSD-3-Clause",
-    "url": "https://attachments-cdn.shimo.im/IBhdRATA9Ngj1WdV.zip?attname=renamer.zip",
-    "bin": "ReNamer.exe",
-    "shortcuts": [
-        [
-            "ReNamer.exe",
-            "ReNamer"
-        ]
+  "version": "7.2",
+  "description": "ReNamer is a very powerful and flexible file renaming tool.",
+  "homepage": "https://www.den4b.com/products/renamer",
+  "license": "BSD-3-Clause",
+  "url": "https://attachments-cdn.shimo.im/IBhdRATA9Ngj1WdV.zip?attname=renamer.zip",
+  "bin": "ReNamer.exe",
+  "shortcuts": [
+    [
+      "ReNamer.exe",
+      "ReNamer"
     ]
+  ]
 }
