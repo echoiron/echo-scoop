@@ -14,5 +14,9 @@
       "Notepad2.exe",
       "Notepad2"
     ]
+  ],
+  "persist": [
+    "Notepad2.ini",
+    "metapath.ini"
   ]
 }
