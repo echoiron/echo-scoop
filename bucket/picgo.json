@@ -21,5 +21,7 @@
   "autoupdate": {
     "url": "https://github.com/Molunerfinn/PicGo/releases/download/v$version/picgo-setup-$version.exe"
   },
-  "depends": "7zip"
+  "others": {
+    "url": "https://molunerfinn.com/PicGo"
+  }
 }
