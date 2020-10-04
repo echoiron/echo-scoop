@@ -26,7 +26,6 @@ scoop bucket add dodorz https://github.com/dodorz/scoop-bucket ;`
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 ```
 
----
 ### Multi-line command for dos/cmd
 ```bash
 scoop bucket add extras & ^
