@@ -1,0 +1,14 @@
+{
+  "version": "3.92",
+  "description": "The Fastest Copy/Backup Software on Windows",
+  "homepage": "https://fastcopy.jp/en/",
+  "license": "BSD-3-Clause",
+  "url": "https://attachments-cdn.shimo.im/QghYW7YNYxiFvbDk.7z?attname=fastcopy.7z",
+  "bin": "FastCopy.exe",
+  "shortcuts": [
+    [
+      "FastCopy.exe",
+      "FastCopy"
+    ]
+  ]
+}
