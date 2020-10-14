@@ -1,0 +1,14 @@
+{
+  "version": "9.3",
+  "description": "金山工具",
+  "homepage": "http://blog.sina.com.cn/s/blog_89a729a40102wjwj.html",
+  "license": "BSD-3-Clause",
+  "url": "https://attachments-cdn.shimo.im/zdhRChOrr2xC8EyS.zip?attname=KCleaner.zip",
+  "bin": "kcleaner.exe",
+  "shortcuts": [
+    [
+      "kcleaner.exe",
+      "金山垃圾清理"
+    ]
+  ]
+}
