@@ -1,9 +1,9 @@
 {
-  "version": "1.7.21306",
+  "version": "1.7.21309",
   "description": "PotPlayer是KMPlayer的原作者姜勇囍进入Daum公司后的新一代作品，目前仍有更新。由于采用Delphi编译程序的KMPlayer有一些弊端，姜勇囍为改进播放器本身的一些性能而重新用VC++进行构架。",
   "homepage": "https://potplayer.daum.net",
   "license": "BSD-3-Clause",
-  "url": "https://storage.live.com/items/F66E0B358F887479!3216:/potplayer.7z?authkey=ANljJ2Ei8immyGs#/dl.7z",
+  "url": "https://storage.live.com/items/F66E0B358F887479!3217:/potplayer.7z?authkey=AHI-8zQWgaHwhMM#/dl.7z",
   "extract_dir": "PotPlayer64",
   "bin": "PotPlayerMini64.exe",
   "shortcuts": [
