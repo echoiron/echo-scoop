@@ -1,9 +1,10 @@
 {
-  "version": "3.22.88.0",
+  "version": "3.23.124.0",
   "description": "An enhanced clipboard manager.",
   "homepage": "https://ditto-cp.sourceforge.io/",
   "license": "BSD-3-Clause",
-  "url": "https://code.aliyun.com/chenmigo/scuup/raw/marron/mu/Ditto_Ver.3.22.88_x64_Chs.7z",
+  "url": "https://attachments-cdn.shimo.im/L5EB7X4jNIEqpeUk.zip?attname=ditto.zip",
+  "extract_dir": "Ditto",
   "bin": "Ditto.exe",
   "shortcuts": [
     [
