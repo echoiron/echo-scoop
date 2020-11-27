@@ -1,9 +1,9 @@
 {
-  "version": "5.20.1260",
+  "version": "5.20.1280",
   "description": "专业的硬件评测、准确的硬件检测、全面的硬件保护",
   "homepage": "https://www.ludashi.com/",
   "license": "BSD-3-Clause",
-  "url": "https://storage.live.com/items/F66E0B358F887479!3218:/ludashi.7z?authkey=ADQKXHvm35lKjC8#/dl.7z",
+  "url": "https://storage.live.com/items/F66E0B358F887479!3223:/ludashi.7z?authkey=AItEw0SHfF37Kek#/dl.7z",
   "bin": "computerz_cn.exe",
   "shortcuts": [
     [
