@@ -1,14 +1,14 @@
 {
-  "version": "9.51",
-  "description": "Total Commander, Version is a Shareware file manager for Windows",
-  "homepage": "https://www.ghisler.com/",
-  "license": "BSD-3-Clause",
-  "url": "https://storage.live.com/items/F66E0B358F887479!3209:/TotalCMD64.7z?authkey=AG02jvgkx6IuF90#/dl.7z",
-  "bin": "TotalCMD64.exe",
-  "shortcuts": [
-    [
-      "TotalCMD64.exe",
-      "Total Commander"
+    "version": "9.51",
+    "description": "Total Commander, Version is a Shareware file manager for Windows",
+    "homepage": "https://www.ghisler.com/",
+    "license": "BSD-3-Clause",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3209:/TotalCMD64.7z?authkey=AG02jvgkx6IuF90#/dl.7z",
+    "bin": "TotalCMD64.exe",
+    "shortcuts": [
+        [
+            "TotalCMD64.exe",
+            "Total Commander"
+        ]
     ]
-  ]
 }

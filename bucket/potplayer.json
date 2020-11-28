@@ -1,15 +1,15 @@
 {
-  "version": "1.7.21311",
-  "description": "multimedia player",
-  "homepage": "https://potplayer.daum.net",
-  "license": "BSD-3-Clause",
-  "url": "https://storage.live.com/items/F66E0B358F887479!3220:/potplayer.7z?authkey=AEJ80kwA6ZNrN-U#/dl.7z",
-  "extract_dir": "PotPlayer64",
-  "bin": "PotPlayerMini64.exe",
-  "shortcuts": [
-    [
-      "PotPlayerMini64.exe",
-      "PotPlayer"
+    "version": "1.7.21311",
+    "description": "multimedia player",
+    "homepage": "https://potplayer.daum.net",
+    "license": "BSD-3-Clause",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3220:/potplayer.7z?authkey=AEJ80kwA6ZNrN-U#/dl.7z",
+    "extract_dir": "PotPlayer64",
+    "bin": "PotPlayerMini64.exe",
+    "shortcuts": [
+        [
+            "PotPlayerMini64.exe",
+            "PotPlayer"
+        ]
     ]
-  ]
 }

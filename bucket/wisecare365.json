@@ -1,17 +1,17 @@
 {
-  "version": "5.6.1.557",
-  "description": "Clean registry and junk files from your PCs. Protect your privacy and make your PCs more secure. Provide a better option of optimizing and accelerating your computer!",
-  "homepage": "https://www.wisecleaner.com.cn/wise-care-365.html",
-  "license": "BSD-3-Clause",
-  "url": "https://attachments-cdn.shimo.im/XaZRAABz9QvQTZjW.7z?attname=wisecare365.7z",
-  "bin": "WiseCare365.exe",
-  "shortcuts": [
-    [
-      "WiseCare365.exe",
-      "WiseCare365"
-    ]
-  ],
-  "others": {
-    "url": "https://www.mpyit.com/wisecare365.html"
-  }
+    "version": "5.6.1.557",
+    "description": "Clean registry and junk files from your PCs. Protect your privacy and make your PCs more secure. Provide a better option of optimizing and accelerating your computer!",
+    "homepage": "https://www.wisecleaner.com.cn/wise-care-365.html",
+    "license": "BSD-3-Clause",
+    "url": "https://attachments-cdn.shimo.im/XaZRAABz9QvQTZjW.7z?attname=wisecare365.7z",
+    "bin": "WiseCare365.exe",
+    "shortcuts": [
+        [
+            "WiseCare365.exe",
+            "WiseCare365"
+        ]
+    ],
+    "others": {
+        "url": "https://www.mpyit.com/wisecare365.html"
+    }
 }

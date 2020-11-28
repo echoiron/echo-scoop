@@ -1,14 +1,14 @@
 {
-  "version": "10.0.0.8852",
-  "description": "超好用的看图软件，你值得拥有！",
-  "homepage": "http://pic.2345.cc/",
-  "license": "BSD-3-Clause",
-  "url": "https://attachments-cdn.shimo.im/G09SqSpEQb2xfzUx.7z?attname=2345pic.7z",
-  "bin": "2345PicViewer.exe",
-  "shortcuts": [
-    [
-      "2345PicViewer.exe",
-      "2345Pic"
+    "version": "10.0.0.8852",
+    "description": "超好用的看图软件，你值得拥有！",
+    "homepage": "http://pic.2345.cc/",
+    "license": "BSD-3-Clause",
+    "url": "https://attachments-cdn.shimo.im/G09SqSpEQb2xfzUx.7z?attname=2345pic.7z",
+    "bin": "2345PicViewer.exe",
+    "shortcuts": [
+        [
+            "2345PicViewer.exe",
+            "2345Pic"
+        ]
     ]
-  ]
 }

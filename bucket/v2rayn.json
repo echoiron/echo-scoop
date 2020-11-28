@@ -1,23 +1,23 @@
 {
-  "version": "3.27",
-  "homepage": "https://github.com/2dust/v2rayN",
-  "license": "BSD-3-Clause",
-  "url": "https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip",
-  "extract_dir": "v2rayN-Core",
-  "bin": "v2rayN.exe",
-  "shortcuts": [
-    [
-      "v2rayN.exe",
-      "v2rayN"
-    ]
-  ],
-  "persist": [
-    "config.json",
-    "guiNConfig.json",
-    "pac.txt"
-  ],
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.zip"
-  }
+    "version": "3.27",
+    "homepage": "https://github.com/2dust/v2rayN",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip",
+    "extract_dir": "v2rayN-Core",
+    "bin": "v2rayN.exe",
+    "shortcuts": [
+        [
+            "v2rayN.exe",
+            "v2rayN"
+        ]
+    ],
+    "persist": [
+        "config.json",
+        "guiNConfig.json",
+        "pac.txt"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.zip"
+    }
 }
