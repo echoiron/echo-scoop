@@ -5,8 +5,8 @@
     "license": "BSD-3-Clause",
     "url": [
         "https://github.com/zufuliu/notepad2/releases/download/v4.20.08r3252/Notepad2_zh-Hans_x64_v4.20.08r3252.zip",
-        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/1_replace_notepad.bat",
-        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/2_restore_notepad.bat"
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/replace-notepad.bat",
+        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/restore-notepad.bat"
     ],
     "bin": "Notepad2.exe",
     "shortcuts": [
