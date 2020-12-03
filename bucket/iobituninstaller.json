@@ -1,9 +1,9 @@
 {
-    "version": "10.1.0.21",
+    "version": "10.2.0.13",
     "description": "Completely Uninstall Unwanted Software, Windows Apps & Browser Plug-ins",
     "homepage": "https://www.iobit.com/en/advanceduninstaller.php",
     "license": "BSD-3-Clause",
-    "url": "https://storage.live.com/items/F66E0B358F887479!3221:/iobituninstaller.7z?authkey=AMDLEKj3W7KcFGM#/dl.7z",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3224:/iobituninstaller.7z?authkey=AE_eQiXVrBysFpc#/dl.7z",
     "bin": "IObitUninstallerPortable.exe",
     "shortcuts": [
         [
