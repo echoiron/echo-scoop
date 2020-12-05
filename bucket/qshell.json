@@ -1,0 +1,14 @@
+{
+    "version": "2.4.2",
+    "description": "qshell是利用七牛文档上公开的API实现的一个方便开发者测试和使用七牛API服务的命令行工具。",
+    "homepage": "https://developer.qiniu.com/kodo/tools/1302/qshell",
+    "license": "BSD-3-Clause",
+    "url": "http://devtools.qiniu.com/qshell-windows-x64-v2.4.2.exe.zip",
+    "installer": {
+        "script": [
+            "Rename-Item \"$dir\\qshell-windows-x64-v$version.exe\" \"$dir\\qshell.exe\""
+        ]
+    },
+    "bin": "qshell.exe",
+    "other": "https://github.com/qiniu/qshell"
+}
