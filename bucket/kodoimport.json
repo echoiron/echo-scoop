@@ -5,10 +5,7 @@
     "license": "BSD-3-Clause",
     "url": "https://kodo-toolbox.qiniu.com/kodoimport_windowsOS_64_v1.2.1.tar.gz",
     "bin": "kodoimport.exe",
-    "shortcuts": [
-        [
-            "kodoimport.exe",
-            "kodoimport"
-        ]
+    "persist": [
+        "conf"
     ]
 }
