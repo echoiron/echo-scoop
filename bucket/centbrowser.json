@@ -1,9 +1,9 @@
 {
-    "version": "4.3.9.227",
+    "version": "4.3.9.238",
     "description": "The Most Feature Rich Chromium",
     "homepage": "https://www.centbrowser.com/",
     "license": "BSD-3-Clause",
-    "url": "http://static.centbrowser.com/win_stable/4.3.9.227/centbrowser_4.3.9.227_portable.exe#/dl.7z",
+    "url": "http://static.centbrowser.com/win_stable/4.3.9.238/centbrowser_4.3.9.238_portable.exe#/dl.7z",
     "bin": "XiuXiu.exe",
     "shortcuts": [
         [
