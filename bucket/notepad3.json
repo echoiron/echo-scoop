@@ -6,8 +6,8 @@
     "bin": "Notepad3.exe",
     "url": [
         "https://github.com/rizonesoft/Notepad3/releases/download/RC_5.20.915.1/Notepad3_5.20.915.1.zip",
-        "https://github.com/echoiron/echo-scoop/raw/main/scripts/notepad3/1_replace_notepad.bat",
-        "https://github.com/echoiron/echo-scoop/raw/main/scripts/notepad3/2_restore_notepad.bat"
+        "https://github.com/echoiron/echo-scoop/raw/main/scripts/notepad3/replace-notepad.bat",
+        "https://github.com/echoiron/echo-scoop/raw/main/scripts/notepad3/restore-notepad.bat"
     ],
     "installer": {
         "script": "Expand-7ZipArchive \"$dir\\Notepad3_5.20.915.1_x64.zip\" \"$dir\" -Removal"
