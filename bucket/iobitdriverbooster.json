@@ -1,9 +1,9 @@
 {
-    "version": "8.2.0.306",
+    "version": "8.2.0.308",
     "description": "Helps Updating 3,500,000+ Drivers for Both Online and Offline PC",
     "homepage": "https://www.iobit.com/en/driver-booster.php",
     "license": "BSD-3-Clause",
-    "url": "https://storage.live.com/items/F66E0B358F887479!3227:/iobitdriverbooster.7z?authkey=AN153d5dKCYus_Y#/dl.7z",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3231:/iobitdriverbooster.7z?authkey=ADYbP3KfY-T2VJo#/dl.7z",
     "bin": "DriverBoosterPortable.exe",
     "shortcuts": [
         [
