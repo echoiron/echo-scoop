@@ -1,4 +1,4 @@
-{
+﻿{
     "version": "10.1.1001.10",
     "description": "Dism++可以说是一个Dism的GUI版，但是并不依赖Dism，直接基于更底层的CBS",
     "homepage": "https://www.chuyu.me/zh-Hans/",
