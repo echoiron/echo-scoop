@@ -1,4 +1,4 @@
-﻿{
+{
     "version": "6.5",
     "description": "eXeScope能在没有资源文件的情况下分析，显示不同的信息，重写可执行文件的资源，包括(EXE，DLL，OCX，VBX）等",
     "license": "BSD-3-Clause",
