@@ -1,9 +1,9 @@
 {
-    "version": "10.0.0.8852",
+    "version": "10.2.0.8989",
     "description": "超好用的看图软件，你值得拥有！",
     "homepage": "http://pic.2345.cc/",
     "license": "BSD-3-Clause",
-    "url": "https://attachments-cdn.shimo.im/G09SqSpEQb2xfzUx.7z?attname=2345pic.7z",
+    "url": "https://storage.live.com/items/F66E0B358F887479!3234:/2345pic.7z?authkey=AHA1SzO-HZCH_ms#/dl.7z",
     "bin": "2345PicViewer.exe",
     "shortcuts": [
         [
