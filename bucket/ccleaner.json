@@ -1,0 +1,14 @@
+{
+    "version": "5.77.8448",
+    "homepage": "https://www.ccleaner.com/ccleaner",
+    "description": "Number-one tool for cleaning PC",
+    "license": "BSD-3-Clause",
+    "url": "https://uploader.shimo.im/f/MXKNt2GNIW0zLKGq.7z",
+    "bin": "CCleaner64.exe",
+    "shortcuts": [
+        [
+            "CCleaner64.exe",
+            "CCleaner"
+        ]
+    ]
+}
