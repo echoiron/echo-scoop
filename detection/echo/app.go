@@ -124,15 +124,6 @@ func NewVersionNotice(app *App) {
 		fmt.Printf("\033[1;31m%s %s %s\033[0m\n", app.Name, app.Version, app.NewVersion)
 		return
 	}
-
-	/*if app.Version < app.NewVersion {
-		fmt.Printf("\033[1;31m%s %s %s\033[0m\n", app.Name, app.Version, app.NewVersion)
-		return
-	}
-	if versionCompare2(app.Version, app.NewVersion) { //解析成浮点数有很大问题
-		fmt.Printf("\033[1;31m%s %s %s\033[0m\n", app.Name, app.Version, app.NewVersion)
-		return
-	}*/
 }
 
 // removerChar 移除版本号中的特殊符号(eg:3.12rc3325)
