@@ -1,2 +1,2 @@
-# 是否开启打开 开启:true 关闭:false
+# 是否开启代理
 enable_proxy = true
