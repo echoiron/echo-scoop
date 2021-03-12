@@ -1,11 +1,11 @@
 package echo
 
 const (
-	Header    = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.81"
+	Header    = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36 Edg/89.0.774.50"
 	ProxyHost = "localhost:1080"
 )
 
-// REGX 应用的版本更新检测正则表达式集
+// REGX App新版检测正则表达式
 var REGX = map[string]string{
 	"2345pic":            `(?<=class="version">v)[0-9.]+(?=</div>)`,
 	"acmekit":            `(?<=软件版本：)[0-9.]+(?=</FONT)`,
@@ -53,7 +53,7 @@ var REGX = map[string]string{
 	"xyplorer":           `(?<=class="smaller">)[0-9.]+`,
 }
 
-// ReplaceURL 替换应用Homepage URL
+// ReplaceURL 替换App的Homepage、URL
 var ReplaceURL = map[string]string{
 	"acmekit":       "http://blog.sina.com.cn/s/blog_89a729a40102wjwh.html",
 	"ccleaner":      "https://www.ccleaner.com/ccleaner/download",
@@ -72,12 +72,11 @@ var ReplaceURL = map[string]string{
 
 // ShieldApp 需要屏蔽无法或不需要检测更新的应用
 var ShieldApp = map[string]bool{
-	"2345pic":    true,
-	"foobar2000": true,
-	"qq":         true,
-	"idm":        true,
-	"potplayer":  true,
-	//"cosbrowser":   true,
+	"2345pic":      true,
+	"foobar2000":   true,
+	"qq":           true,
+	"idm":          true,
+	"potplayer":    true,
 	"eudic":        true,
 	"ocam":         true,
 	"xiuxiu":       true,
@@ -91,3 +90,15 @@ var ShieldApp = map[string]bool{
 	"wetool":       true,
 	"xtools":       true,
 }
+
+// 终端背景颜色
+const (
+	TextBlack = iota + 30
+	TextRed
+	TextGreen
+	TextYellow
+	TextBlue
+	TextMagenta
+	TextCyan
+	TextWhite
+)
