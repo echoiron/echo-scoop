@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 )
 
@@ -32,22 +33,8 @@ func ShieldDet(name string) bool {
 	return ShieldApp[name]
 }
 
-func ProxyState(stat bool) bool {
-	return stat
-}
-
-func Glob(dir string) string {
-	sub := "bucket"
-	ext := "*.json"
-	separator := "\\"
-	if !strings.Contains(dir, "\\") {
-		separator = "/"
-	}
-	pattern := fmt.Sprintf("%s%s%s%s%s", dir, separator, sub, separator, ext)
-	return pattern
-}
-
-func GetCurrentPath() string {
+// currDir 当前目录
+func currDir() string {
 	dir, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
@@ -55,7 +42,32 @@ func GetCurrentPath() string {
 	return strings.Replace(dir, "\\", "/", -1)
 }
 
-func GetParentPath(path string) string {
+// parentDir 父级目录
+func parentDir(path string) string {
 	parentPath := filepath.Dir(path)
 	return strings.Replace(parentPath, "\\", "/", -1)
+}
+
+func bucketPattern(dir string) string {
+	sub := "bucket"
+	ext := "*.json"
+	separator := "\\"
+	if !strings.Contains(dir, "\\") {
+		separator = "/"
+	}
+	return fmt.Sprintf("%s%s%s%s%s", dir, separator, sub, separator, ext)
+}
+
+// BucketFiles bucket文件
+func BucketFiles() ([]string, error) {
+	wd := currDir()
+	pd := parentDir(wd)
+	pattern := bucketPattern(pd)
+
+	bucketFiles, err := filepath.Glob(pattern)
+	if err != nil {
+		return []string{}, err
+	}
+	sort.Strings(bucketFiles)
+	return bucketFiles, nil
 }
