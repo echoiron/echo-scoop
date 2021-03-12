@@ -20,21 +20,9 @@ type App struct {
 	NewVersion  string `json:"newVersion"`
 	Description string `json:"description"`
 	Homepage    string `json:"homepage"`
-	License     string `json:"license"`
+	//License     string `json:"license"`
 	//URL         string `json:"url"`
-	Bin string `json:"bin"`
-}
-
-func FileName(filePath string) string {
-	base := filepath.Base(filePath)
-	s := strings.Split(base, ".")
-	var fileName string
-	if len(s) == 0 {
-		fileName = ""
-	} else {
-		fileName = s[0]
-	}
-	return fileName
+	//Bin string `json:"bin"`
 }
 
 func ReadApp(name string) App {
@@ -53,31 +41,12 @@ func ReadApp(name string) App {
 	return app
 }
 
-func request(url string) string {
-
-	proxyState := viper.GetBool("enable_proxy") //是否开启代理
-	c := &fasthttp.Client{}
-	c.Name = Header
-	if proxyState {
-		c.Dial = fasthttpproxy.FasthttpHTTPDialer(ProxyHost)
-	}
-	code, body, err := c.Get(nil, url)
-	if err != nil {
-		log.Printf("Error when loading google page through local proxy: %s", err)
-	}
-	if code != fasthttp.StatusOK {
-		log.Printf("Unexpected status code: %d. Expecting %d", code, fasthttp.StatusOK)
-	}
-
-	return string(body)
-}
-
 func CheckApp(app *App) {
 	homePage := Replace(app.Name)
 	if homePage == "" {
 		homePage = app.Homepage
 	}
-	content := request(homePage)
+	content := requestLink(homePage)
 	// fmt.Println(content)
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
@@ -87,6 +56,29 @@ func CheckApp(app *App) {
 		return
 	}
 	app.NewVersion = m.String()
+}
+
+// NewVersionDetected 检测到App新版本
+func NewVersionDetected(app *App) {
+
+	if compareVersion(removerChar(app.Version), removerChar(app.NewVersion)) == -1 {
+		text := fmt.Sprintf("%s %s %s %s", app.Name, app.Version, app.NewVersion, app.Homepage)
+		fmt.Println(colorPrint(text, 0, TextRed, 0))
+		return
+	}
+	fmt.Printf("app--> %v\n", app)
+}
+
+func FileName(filePath string) string {
+	base := filepath.Base(filePath)
+	s := strings.Split(base, ".")
+	var fileName string
+	if len(s) == 0 {
+		fileName = ""
+	} else {
+		fileName = s[0]
+	}
+	return fileName
 }
 
 // compareVersion 版本号比较
@@ -117,13 +109,31 @@ func compareVersion(version1 string, version2 string) int {
 	return 0
 }
 
-// NewVersionNotice 新版本高亮提示
-func NewVersionNotice(app *App) {
-	fmt.Println("app-->", app)
-	if compareVersion(removerChar(app.Version), removerChar(app.NewVersion)) == -1 {
-		fmt.Printf("\033[1;31m%s %s %s\033[0m\n", app.Name, app.Version, app.NewVersion)
-		return
+func requestLink(url string) string {
+
+	proxyState := viper.GetBool("enable_proxy") //是否开启代理
+	c := &fasthttp.Client{}
+	c.Name = Header
+	if proxyState {
+		c.Dial = fasthttpproxy.FasthttpHTTPDialer(ProxyHost)
 	}
+	code, body, err := c.Get(nil, url)
+	if err != nil {
+		log.Printf("Request error: %s", err)
+	}
+	if code != fasthttp.StatusOK {
+		log.Printf("Unexpected status code: %d. Expecting %d", code, fasthttp.StatusOK)
+	}
+
+	return string(body)
+}
+
+// colorPrint 配置终端打印颜色
+// def: 终端默认颜色
+// fg: 前景色
+// bg: 背景色
+func colorPrint(text string, def, fg, bg int) string {
+	return fmt.Sprintf("%c[%d;%d;%dm%s%c[0m", 0x1B, def, bg, fg, text, 0x1B)
 }
 
 // removerChar 移除版本号中的特殊符号(eg:3.12rc3325)
