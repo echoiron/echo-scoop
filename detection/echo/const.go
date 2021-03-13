@@ -7,7 +7,6 @@ const (
 
 // REGX App新版检测正则表达式
 var REGX = map[string]string{
-	"2345pic":            `(?<=class="version">v)[0-9.]+(?=</div>)`,
 	"acmekit":            `(?<=软件版本：)[0-9.]+(?=</FONT)`,
 	"beyondcompare":      `(?<=BCompare-)[0-9.]+(?=.exe)`,
 	"ccleaner":           `(?<=CCleaner v)[0-9.]+`,
@@ -18,28 +17,25 @@ var REGX = map[string]string{
 	"cosbrowser":         `(?<=</a>v)[0-9.]+`,
 	"dismpp":             `(?<=What's new ‒ version )[0-9.]+`,
 	"ditto":              `(?<=versionDots=")[0-9.]+`,
-	"es":                 `(?<=href="/ES-)[0-9.]+(?=\.zip")`,
 	"emeditor":           `(?<=Download latest version: v)[0-9.]+`,
+	"es":                 `(?<=href="/ES-)[0-9.]+(?=\.zip")`,
 	"fastcopy":           `(?<=FastCopy ver )[0-9.]+`,
-	"foobar2000":         `(?<=foobar2000 v)[0-9.]+`,
 	"fscapture":          `(?<=Version\s+)[0-9.]+`,
 	"fsresizer":          `(?<=Version\s+)[0-9.]+`,
 	"hbuilderx":          `(?<="version":\s+")[0-9.]+`,
-	"idm":                `(?<=IDM_Retail_v)[0-9.]+`,
 	"iobitdriverbooster": `(?<=<span>V\s+)[0-9.]+`,
 	"iobituninstaller":   `(?<=<span>V\s+)[0-9.]+`,
 	"kodobrowser":        `(?<=kodo-browser-Windows-x64-v)[0-9.]+(?=.zip)`,
 	"kodoimport":         `(?<=kodoimport_windowsOS_64_v)[0-9.]+(?=.tar.gz)`,
 	"lightproxy":         `(?<=tag/v)[0-9.]+`,
-	"newfiletime":        `(?<=NewFileTime\s+)[0-9.]+`,
 	"n_m3u8dl-cli":       `(?<=N_m3u8DL-CLI_v)[0-9r.]+`,
+	"newfiletime":        `(?<=NewFileTime\s+)[0-9.]+`,
 	"notepad2":           `(?<=tag/v)[0-9r.]+`,
 	"notepad3":           `(?<=Notepad3 Release )[0-9.]+`,
 	"oss-browser":        `(?<=oss-browser/)[0-9.]+(?=/oss-browser-win32-x64.zip)`,
 	"ossutil":            `(?<=ossutil/)[0-9.]+(?=/ossutil64.zip)`,
 	"picgo":              `(?<=tree/v)[0-9.]+(?=")`,
-	"potplayer":          `(?<=class="tit_version" title="version">)1\.[0-9.]+`,
-	"qq":                 `(?<="new-version">)[0-9.]+`,
+	"protoc":             `(?<=Protocol Buffers v)[0-9.]+`,
 	"qshell":             `(?<=qshell-v)[0-9.]+(?=-windows-amd64)`,
 	"renamer":            `(?<=/download/renamer/installer/)[0-9.]+`,
 	"shadowsocksrr":      `(?<=tag/)[0-9.]+`,
@@ -47,10 +43,36 @@ var REGX = map[string]string{
 	"ultraiso":           `(?<=UltraISO\s+)[0-9.]+(?=\s+released)`,
 	"uninstalltool":      `(?<=release-notes">)[0-9.]+`,
 	"v2rayn":             `(?<=releases/tag/)[0-9.]+`,
-	"wisecare365":        `(?<=当前版本: )[0-9.]+`,
 	"wechat":             `(?<=class="version-tag">)[0-9.]+`,
 	"wesing":             `(?<=version_pc:')[0-9.]+`,
+	"wisecare365":        `(?<=当前版本: )[0-9.]+`,
 	"xyplorer":           `(?<=class="smaller">)[0-9.]+`,
+	//"2345pic":            `(?<=class="version">v)[0-9.]+(?=</div>)`,
+	//"foobar2000":         `(?<=foobar2000 v)[0-9.]+`,
+	//"idm":                `(?<=IDM_Retail_v)[0-9.]+`,
+	//"potplayer":          `(?<=class="tit_version" title="version">)1\.[0-9.]+`,
+	//"qq":                 `(?<="new-version">)[0-9.]+`,
+}
+
+// ShieldApp 需要屏蔽无法或不需要检测更新的应用
+var ShieldApp = map[string]bool{
+	"2345pic":      true,
+	"eudic":        true,
+	"exescope":     true,
+	"foobar2000":   true,
+	"idm":          true,
+	"kbootopt":     true,
+	"kcleaner":     true,
+	"ksoftmgr":     true,
+	"ludashi":      true,
+	"neteasemusic": true, //301
+	"notepad2-mod": true,
+	"ocam":         true,
+	"potplayer":    true,
+	"qq":           true,
+	"wetool":       true,
+	"xiuxiu":       true,
+	"xtools":       true,
 }
 
 // ReplaceURL 替换App的Homepage、URL
@@ -68,27 +90,6 @@ var ReplaceURL = map[string]string{
 	"uninstalltool": "https://crystalidea.com/uninstall-tool/download",
 	"wechat":        "https://pc.weixin.qq.com/",
 	"wesing":        "https://kg.qq.com/gtimg/mediastyle/musiccm/kg/kg_feature.js",
-}
-
-// ShieldApp 需要屏蔽无法或不需要检测更新的应用
-var ShieldApp = map[string]bool{
-	"2345pic":      true,
-	"foobar2000":   true,
-	"qq":           true,
-	"idm":          true,
-	"potplayer":    true,
-	"eudic":        true,
-	"ocam":         true,
-	"xiuxiu":       true,
-	"ludashi":      true,
-	"neteasemusic": true, //301
-	"notepad2-mod": true,
-	"exescope":     true,
-	"kbootopt":     true,
-	"kcleaner":     true,
-	"ksoftmgr":     true,
-	"wetool":       true,
-	"xtools":       true,
 }
 
 // 终端背景颜色
