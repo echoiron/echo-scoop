@@ -4,9 +4,9 @@
     "homepage": "https://github.com/XhmikosR/notepad2-mod",
     "license": "BSD-3-Clause",
     "url": [
-        "https://github.com/zufuliu/notepad2/releases/download/v4.20.08r3252/Notepad2_zh-Hans_x64_v4.20.08r3252.zip",
-        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/replace-notepad.bat",
-        "https://github.com/echoiron/echo-scoop/raw/master/scripts/notepad2/restore-notepad.bat"
+        "https://storage.live.com/items/F66E0B358F887479!3237:/notepad2-mod.7z?authkey=AC95MoQgubXgxHQ#/dl.7z",
+        "https://raw.githubusercontent.com/echoiron/echo-scoop/main/scripts/notepad2/replace-notepad.bat",
+        "https://raw.githubusercontent.com/echoiron/echo-scoop/main/scripts/notepad2/restore-notepad.bat"
     ],
     "bin": "Notepad2.exe",
     "shortcuts": [
