@@ -51,7 +51,7 @@ func CheckApp(app *App) {
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
 	if err != nil || m == nil {
-		fmt.Println("match data:", m, "| err:", err)
+		log.Println(app.Name, "match data:", m, "| err:", err)
 		app.NewVersion = app.Version
 		return
 	}
@@ -66,7 +66,7 @@ func NewVersionDetected(app *App) {
 		fmt.Println(colorPrint(text, 0, TextRed, 0))
 		return
 	}
-	fmt.Printf("app--> %v\n", app)
+	fmt.Printf("%s %s %s %s\n", app.Name, app.Version, app.NewVersion, app.Homepage)
 }
 
 func FileName(filePath string) string {
@@ -111,11 +111,12 @@ func compareVersion(version1 string, version2 string) int {
 
 func requestLink(url string) string {
 
-	proxyState := viper.GetBool("enable_proxy") //是否开启代理
+	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy")) //是否开启代理
 	c := &fasthttp.Client{}
-	c.Name = Header
+
+	c.Name = viper.GetString(fmt.Sprintf("network.%s", "user_agent"))
 	if proxyState {
-		c.Dial = fasthttpproxy.FasthttpHTTPDialer(ProxyHost)
+		c.Dial = fasthttpproxy.FasthttpHTTPDialer(viper.GetString(fmt.Sprintf("network.%s", "proxy_host")))
 	}
 	code, body, err := c.Get(nil, url)
 	if err != nil {
