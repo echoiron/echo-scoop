@@ -20,17 +20,17 @@ func init() {
 
 // RegxValue 正则值
 func RegxValue(name string) string {
-	return REGX[name]
+	return viper.GetString(fmt.Sprintf("regx.%s", name))
 }
 
 // Replace 替换应用链接
 func Replace(name string) string {
-	return ReplaceURL[name]
+	return viper.GetString(fmt.Sprintf("replaceurl.%s", name))
 }
 
 // ShieldDet 屏蔽应用检测
 func ShieldDet(name string) bool {
-	return ShieldApp[name]
+	return viper.GetBool(fmt.Sprintf("shieldapp.%s", name))
 }
 
 // currDir 当前目录
