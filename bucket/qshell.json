@@ -1,9 +1,11 @@
 {
-    "version": "2.4.3",
+    "version": "2.5.0",
     "description": "Shell Tools for Qiniu Cloud",
-    "homepage": "https://developer.qiniu.com/kodo/tools/1302/qshell",
+    "homepage": "https://developer.qiniu.com/kodo/1302/qshell",
     "license": "BSD-3-Clause",
-    "url": "https://devtools.qiniu.com/qshell-v2.4.3-windows-amd64.zip",
+    "url": "https://devtools.qiniu.com/qshell-v2.5.0-windows-amd64.zip",
     "bin": "qshell.exe",
-    "other": "https://github.com/qiniu/qshell"
+    "others": {
+        "url": "https://github.com/qiniu/qshell"
+    }
 }
