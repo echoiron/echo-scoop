@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-// conf/app.toml 配置是否开启代理
+// conf/app.toml 配置
 
 func main() {
 
@@ -18,7 +18,7 @@ func main() {
 
 	var wg sync.WaitGroup
 	for _, name := range files {
-		fileName := echo.FileName(name)
+		fileName := echo.NameNoExt(name)
 		if echo.ShieldDet(fileName) {
 			continue
 		}
