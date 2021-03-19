@@ -6,8 +6,19 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"sort"
 	"strings"
+)
+
+// 终端背景颜色
+const (
+	TextBlack = iota + 30
+	TextRed
+	TextGreen
+	TextYellow
+	TextBlue
+	TextMagenta
+	TextCyan
+	TextWhite
 )
 
 func init() {
@@ -16,6 +27,14 @@ func init() {
 	if err != nil {
 		log.Panicf("read config failed: %v", err)
 	}
+}
+
+// colorPrint 配置终端打印颜色
+// def: 终端默认颜色
+// fg: 前景色
+// bg: 背景色
+func colorPrint(text string, def, fg, bg int) string {
+	return fmt.Sprintf("%c[%d;%d;%dm%s%c[0m", 0x1B, def, bg, fg, text, 0x1B)
 }
 
 // RegxValue 正则值
@@ -48,6 +67,7 @@ func parentDir(path string) string {
 	return strings.Replace(parentPath, "\\", "/", -1)
 }
 
+// bucketPattern bucket文件通配表达式
 func bucketPattern(dir string) string {
 	sub := "bucket"
 	ext := "*.json"
@@ -56,18 +76,4 @@ func bucketPattern(dir string) string {
 		separator = "/"
 	}
 	return fmt.Sprintf("%s%s%s%s%s", dir, separator, sub, separator, ext)
-}
-
-// BucketFiles bucket文件
-func BucketFiles() ([]string, error) {
-	wd := currDir()
-	pd := parentDir(wd)
-	pattern := bucketPattern(pd)
-
-	bucketFiles, err := filepath.Glob(pattern)
-	if err != nil {
-		return []string{}, err
-	}
-	sort.Strings(bucketFiles)
-	return bucketFiles, nil
 }
