@@ -10,10 +10,12 @@ import (
 	"io/ioutil"
 	"log"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 )
 
+// App echo-scoop/bucket/xx.json
 type App struct {
 	Name        string `json:"name"`
 	Version     string `json:"version"`
@@ -26,7 +28,7 @@ type App struct {
 }
 
 func ReadApp(name string) App {
-	fileName := FileName(name)
+	fileName := NameNoExt(name)
 	file, err := ioutil.ReadFile(name)
 	if err != nil {
 		log.Println(err)
@@ -60,7 +62,6 @@ func CheckApp(app *App) {
 
 // NewVersionDetected 检测到App新版本
 func NewVersionDetected(app *App) {
-
 	if compareVersion(removerChar(app.Version), removerChar(app.NewVersion)) == -1 {
 		text := fmt.Sprintf("%s %s %s %s", app.Name, app.Version, app.NewVersion, app.Homepage)
 		fmt.Println(colorPrint(text, 0, TextRed, 0))
@@ -69,7 +70,22 @@ func NewVersionDetected(app *App) {
 	fmt.Printf("%s %s %s %s\n", app.Name, app.Version, app.NewVersion, app.Homepage)
 }
 
-func FileName(filePath string) string {
+// BucketFiles bucket文件
+func BucketFiles() ([]string, error) {
+	wd := currDir()
+	pd := parentDir(wd)
+	pattern := bucketPattern(pd)
+
+	bucketFiles, err := filepath.Glob(pattern)
+	if err != nil {
+		return []string{}, err
+	}
+	sort.Strings(bucketFiles)
+	return bucketFiles, nil
+}
+
+// NameNoExt 不包含扩展名称的文件名
+func NameNoExt(filePath string) string {
 	base := filepath.Base(filePath)
 	s := strings.Split(base, ".")
 	var fileName string
@@ -79,6 +95,16 @@ func FileName(filePath string) string {
 		fileName = s[0]
 	}
 	return fileName
+}
+
+// removerChar 移除版本号中的特殊符号(eg:3.12rc3325)
+func removerChar(str string) string {
+	re := regexp2.MustCompile("[a-zA-Z]", regexp2.None)
+	newStr, err := re.Replace(str, "0", -1, -1)
+	if err != nil {
+		return str
+	}
+	return newStr
 }
 
 // compareVersion 版本号比较
@@ -110,10 +136,8 @@ func compareVersion(version1 string, version2 string) int {
 }
 
 func requestLink(url string) string {
-
 	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy")) //是否开启代理
 	c := &fasthttp.Client{}
-
 	c.Name = viper.GetString(fmt.Sprintf("network.%s", "user_agent"))
 	if proxyState {
 		c.Dial = fasthttpproxy.FasthttpHTTPDialer(viper.GetString(fmt.Sprintf("network.%s", "proxy_host")))
@@ -125,24 +149,5 @@ func requestLink(url string) string {
 	if code != fasthttp.StatusOK {
 		log.Printf("Unexpected status code: %d. Expecting %d", code, fasthttp.StatusOK)
 	}
-
 	return string(body)
-}
-
-// colorPrint 配置终端打印颜色
-// def: 终端默认颜色
-// fg: 前景色
-// bg: 背景色
-func colorPrint(text string, def, fg, bg int) string {
-	return fmt.Sprintf("%c[%d;%d;%dm%s%c[0m", 0x1B, def, bg, fg, text, 0x1B)
-}
-
-// removerChar 移除版本号中的特殊符号(eg:3.12rc3325)
-func removerChar(str string) string {
-	re := regexp2.MustCompile("[a-zA-Z]", regexp2.None)
-	newStr, err := re.Replace(str, "0", -1, -1)
-	if err != nil {
-		return str
-	}
-	return newStr
 }
