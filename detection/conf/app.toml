@@ -7,9 +7,10 @@ proxy_host = "localhost:1080"
 [regx]
 acmekit = '(?<=软件版本：)[0-9.]+(?=</FONT)'
 beyondcompare = '(?<=BCompare-)[0-9.]+(?=.exe)'
+bypass = '(?<=Version&#xFF1A;)[0-9.]+'
 ccleaner = '(?<=CCleaner v)[0-9.]+'
 centbrowser = '(?<=Version: )[0-9.]+'
-chrome = '(?<=版本：<b>)[0-9.]+'
+chrome = '(?<=版本：)[0-9.]+'
 clash = '(?<=v )[0-9.]+'
 claunch = '(?<=CLaunch 64-bit Unicode Ver. )[0-9.]+'
 contextmenumanager = '(?<=tag/)[0-9.]+'
@@ -76,7 +77,7 @@ cosbrowser = "https://github.com/tencentyun/cosbrowser/blob/master/changelog.md"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
-oss-browser = "https://help.aliyun.com/document_detail/61872.html"
+oss-browser = "https://help.aliyun.com/document_detail/209974.html"
 ossutil = "https://help.aliyun.com/document_detail/120075.html"
 picgo = "https://github.com/Molunerfinn/PicGo/releases"
 renamer = "https://www.den4b.com/downloads/renamer"
