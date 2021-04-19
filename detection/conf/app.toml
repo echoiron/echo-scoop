@@ -1,6 +1,6 @@
 [network]
 enable_proxy = true # 是否开启代理
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.54"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36 Edg/90.0.818.41"
 proxy_host = "localhost:1080"
 
 # App新版检测正则表达式
@@ -36,6 +36,7 @@ oss-browser = '(?<=oss-browser/)[0-9.]+(?=/oss-browser-win32-x64.zip)'
 ossutil = '(?<=ossutil/)[0-9.]+(?=/ossutil64.zip)'
 picgo = '(?<=tree/v)[0-9.]+(?=")'
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
+q-dir = '(?<=New in version )[0-9.]+'
 qshell = '(?<=qshell-v)[0-9.]+(?=-windows-amd64)'
 renamer = '(?<=/download/renamer/installer/)[0-9.]+'
 shadowsocksrr = '(?<=tag/)[0-9.]+'
@@ -65,7 +66,6 @@ ocam = true
 pdfshaper = true
 potplayer = true
 qq = true
-wetool = true
 xiuxiu = true
 xtools = true
 
