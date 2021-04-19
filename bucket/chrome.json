@@ -1,9 +1,9 @@
 {
-    "version": "89.0.4389.90",
+    "version": "90.0.4430.72",
     "description": "The browser built by Google",
     "homepage": "https://shuax.com/project/chrome/",
     "license": "BSD-3-Clause",
-    "url": "https://assets.shuax.com/GoogleChrome_X64_89.0.4389.90_shuax.com.7z",
+    "url": "https://assets.shuax.com/GoogleChrome_X64_90.0.4430.72_shuax.com.7z",
     "extract_dir": "chrome",
     "bin": "App\\chrome.exe",
     "persist": "Data",
