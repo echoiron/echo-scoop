@@ -1,9 +1,9 @@
 {
-    "version": "6.38.18",
+    "version": "6.38.21",
     "description": "Internet Download Manager（简称IDM）是一个用于Windows系统的下载管理器。",
     "homepage": "http://www.internetdownloadmanager.com/download.html",
     "license": "BSD-3-Clause",
-    "url": "https://uploader.shimo.im/f/Xza8iJ8nxiPqaDJO.zip",
+    "url": "https://uploader.shimo.im/f/f8FfpWzBmeNlEh86.7z",
     "extract_dir": "Internet Download Manager",
     "bin": "IDMan.exe",
     "shortcuts": [
