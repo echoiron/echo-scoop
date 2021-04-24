@@ -1,9 +1,9 @@
 [network]
 enable_proxy = true # 是否开启代理
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36 Edg/90.0.818.41"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
 proxy_host = "localhost:1080"
 
-# App新版检测正则表达式
+# 检测应用新版正则集
 [regx]
 acmekit = '(?<=软件版本：)[0-9.]+(?=</FONT)'
 beyondcompare = '(?<=BCompare-)[0-9.]+(?=.exe)'
@@ -49,7 +49,7 @@ wesing = "(?<=version_pc:\\')[0-9.]+"
 wisecare365 = '(?<=当前版本: )[0-9.]+'
 xyplorer = '(?<=class="smaller">)[0-9.]+'
 
-# 需要屏蔽无法或不需要检测更新的应用
+# 屏蔽无需更新或无法更新的应用
 [shieldapp]
 2345pic = true
 eudic = true
@@ -66,6 +66,7 @@ ocam = true
 pdfshaper = true
 potplayer = true
 qq = true
+remnote = true # //301
 xiuxiu = true
 xtools = true
 
