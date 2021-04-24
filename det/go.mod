@@ -1,4 +1,4 @@
-module detection
+module det
 
 go 1.16
 

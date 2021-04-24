@@ -1,7 +1,7 @@
 package main
 
 import (
-	"detection/echo"
+	"det/echo"
 	"log"
 	"sync"
 )
