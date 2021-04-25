@@ -9,6 +9,7 @@ import (
 	"github.com/valyala/fasthttp/fasthttpproxy"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"path/filepath"
 	"sort"
 	"strconv"
@@ -48,7 +49,16 @@ func CheckApp(app *App) {
 	if homePage == "" {
 		homePage = app.Homepage
 	}
-	content := requestLink(homePage)
+
+	rUrl := viper.GetString(fmt.Sprintf("redirecturl.%s", app.Name))
+	var content string
+	if rUrl == ""{
+		content = requestLink(homePage)
+	}else {
+		homePage = rUrl
+		content = redirectLink(homePage)
+	}
+
 	// fmt.Println(content)
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
@@ -135,6 +145,7 @@ func compareVersion(version1 string, version2 string) int {
 	return 0
 }
 
+// requestLink 请求链接
 func requestLink(url string) string {
 	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy")) //是否开启代理
 	c := &fasthttp.Client{}
@@ -150,4 +161,18 @@ func requestLink(url string) string {
 		log.Printf("Unexpected status code: %d. Expecting %d", code, fasthttp.StatusOK)
 	}
 	return string(body)
+}
+
+// redirectLink 重定向链接
+func redirectLink(url string)  string{
+	client := &http.Client{
+		CheckRedirect: func(req *http.Request, via []*http.Request) error {
+			return http.ErrUseLastResponse
+		},
+	}
+	res, err := client.Get(url)
+	if err != nil {
+		return url
+	}
+	return res.Header.Get("Location")
 }
