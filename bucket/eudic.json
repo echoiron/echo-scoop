@@ -1,9 +1,9 @@
 {
-    "version": "12.5.0",
+    "version": "12.6.1",
     "description": "权威的英语词典软件 英语学习者必备的工具",
     "homepage": "https://www.eudic.net/",
     "license": "BSD-3-Clause",
-    "url": "http://static.frdic.com/pkg/eudic_win.zip",
+    "url": "https://static.frdic.com/pkg/eudic_win.zip",
     "installer": {
         "script": [
             "Expand-7ZipArchive \"$dir\\eudic_win.exe\" \"$dir\\\" -Removal",
@@ -17,12 +17,5 @@
             "eudic.exe",
             "Eudic"
         ]
-    ],
-    "checkver": {
-        "url": "https://www.eudic.net/v4/en/app/download",
-        "regex": "<a href=\"https://www.eudic.net/download/eudic_win.zip\\?v=([\\d-]+)\""
-    },
-    "autoupdate": {
-        "url": "http://static.frdic.com/pkg/eudic_win.zip"
-    }
+    ]
 }
