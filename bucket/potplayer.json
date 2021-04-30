@@ -1,10 +1,9 @@
 {
-    "version": "1.7.21472",
+    "version": "1.7.21483",
     "description": "multimedia player",
     "homepage": "https://potplayer.daum.net",
     "license": "BSD-3-Clause",
     "url": "https://storage.live.com/items/F66E0B358F887479!3235:/potplayer.7z?authkey=AKEe6rrt5rVQwzc#/dl.7z",
-    "extract_dir": "PotPlayer64",
     "bin": "PotPlayerMini64.exe",
     "shortcuts": [
         [
