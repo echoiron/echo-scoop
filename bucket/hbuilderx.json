@@ -1,8 +1,8 @@
 {
-    "version": "3.1.11.20210423",
+    "version": "3.1.12.20210428",
     "homepage": "https://www.dcloud.io/hbuilderx.html",
     "license": "BSD-3-Clause",
-    "url": "https://download1.dcloud.net.cn/download/HBuilderX.3.1.11.20210423.full.zip",
+    "url": "https://download1.dcloud.net.cn/download/HBuilderX.3.1.12.20210428.full.zip",
     "extract_dir": "HBuilderX",
     "bin": "HBuilderX.exe",
     "shortcuts": [
