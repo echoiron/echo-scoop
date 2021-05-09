@@ -56,6 +56,7 @@ xyplorer = '(?<=class="smaller">)[0-9.]+'
 # 屏蔽无需更新或无法更新的应用
 [shieldapp]
 2345pic = true
+baidunetdisk = true
 eudic = true
 exescope = true
 foobar2000 = true
