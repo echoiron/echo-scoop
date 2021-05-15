@@ -1,9 +1,9 @@
 {
-    "version": "10.3.1.9191",
+    "version": "10.4.0.9254",
     "description": "2345看图王是2345推出的一款速度超快并且格式兼容超多的高清看图软件，支持常用的jpg、bmp、gif、tiff、png等多达95种格式图片的查看",
     "homepage": "https://pic.2345.cc/",
     "license": "BSD-3-Clause",
-    "url": "https://storage.live.com/items/F66E0B358F887479!3234:/2345pic.7z?authkey=AHA1SzO-HZCH_ms#/dl.7z",
+    "url": "https://code.aliyun.com/eft/sw/raw/main/src/2345pic.7z",
     "bin": "2345PicViewer.exe",
     "shortcuts": [
         [
