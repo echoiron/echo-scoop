@@ -52,9 +52,9 @@ func CheckApp(app *App) {
 
 	rUrl := viper.GetString(fmt.Sprintf("redirecturl.%s", app.Name))
 	var content string
-	if rUrl == ""{
+	if rUrl == "" {
 		content = requestLink(homePage)
-	}else {
+	} else {
 		homePage = rUrl
 		content = redirectLink(homePage)
 	}
@@ -63,7 +63,7 @@ func CheckApp(app *App) {
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
 	if err != nil || m == nil {
-		log.Println(app.Name, "match data:", m, "| err:", err)
+		log.Printf("-->%s matching version failed", app.Name)
 		app.NewVersion = app.Version
 		return
 	}
@@ -164,7 +164,7 @@ func requestLink(url string) string {
 }
 
 // redirectLink 重定向链接
-func redirectLink(url string)  string{
+func redirectLink(url string) string {
 	client := &http.Client{
 		CheckRedirect: func(req *http.Request, via []*http.Request) error {
 			return http.ErrUseLastResponse
