@@ -1,9 +1,9 @@
 {
-    "version": "5.79.8704",
+    "version": "5.80.8743",
     "homepage": "https://www.ccleaner.com/ccleaner",
     "description": "Number-one tool for cleaning PC",
     "license": "BSD-3-Clause",
-    "url": "https://uploader.shimo.im/f/Pm6nhoifWabKeQr6.7z",
+    "url": "https://code.aliyun.com/eft/sw/raw/main/src/ccleaner.7z",
     "bin": "CCleaner.exe",
     "shortcuts": [
         [
