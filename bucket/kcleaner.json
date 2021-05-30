@@ -3,7 +3,7 @@
     "description": "金山工具",
     "homepage": "http://blog.sina.com.cn/s/blog_89a729a40102wjwj.html",
     "license": "BSD-3-Clause",
-    "url": "https://attachments-cdn.shimo.im/zdhRChOrr2xC8EyS.zip?attname=KCleaner.zip",
+    "url": "https://code.aliyun.com/eft/sw/raw/main/src/kcleaner.7z",
     "bin": "kcleaner.exe",
     "shortcuts": [
         [
