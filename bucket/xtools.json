@@ -3,7 +3,7 @@
     "description": "拖把更名器",
     "homepage": "https://web.archive.org/web/20150313163040/http://enka.javaws.com/torble/software.php",
     "license": "BSD-3-Clause",
-    "url": "https://attachments-cdn.shimo.im/jC9sXyOOCjuZOO9g.zip?attname=SRename.zip",
+    "url": "https://code.aliyun.com/eft/sw/raw/main/src/xtools.7z",
     "extract_dir": "SRename",
     "bin": "xTools.exe",
     "shortcuts": [
