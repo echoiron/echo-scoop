@@ -1,11 +1,12 @@
 [network]
 enable_proxy = true # 是否开启代理
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54"
 proxy_host = "localhost:1080"
 
-# 检测应用新版正则集
+# 检测新版本正则集
 [regx]
 acmekit = '(?<=软件版本：)[0-9.]+(?=</FONT)'
+adrive = "(?<=latest_version: 'V)[0-9.]+(?=')"
 beyondcompare = '(?<=BCompare-)[0-9.]+(?=.exe)'
 bypass = '[0-9.]+(?=.zip)'
 ccleaner = '(?<=CCleaner v)[0-9.]+'
@@ -74,6 +75,7 @@ qq = true
 xiuxiu = true
 xtools = true
 
+# 通过URL重定向匹配新版本
 [redirecturl]
 bypass = "https://www.bypass.cn/api/download?name=Bypass.zip"
 cosbrowser = "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"
