@@ -1,9 +1,9 @@
 {
-    "version": "9.51",
+    "version": "10.0",
     "description": "Total Commander, Version is a Shareware file manager for Windows",
     "homepage": "https://www.ghisler.com/",
     "license": "BSD-3-Clause",
-    "url": "https://storage.live.com/items/F66E0B358F887479!3230:/totalcmd64.7z?authkey=AMBRUfCNKxHCRIk#/dl.7z",
+    "url": "https://code.aliyun.com/eft/sw/raw/main/src/totalcommander.7z",
     "bin": "TotalCMD64.exe",
     "shortcuts": [
         [
