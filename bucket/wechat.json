@@ -1,7 +1,7 @@
 {
-    "version": "3.2.1",
-    "description": "Free messaging and calling app.",
-    "homepage": "https://weixin.qq.com/",
+    "version": "3.3.0",
+    "description": "Connecting a billion people with calls, chats, and more",
+    "homepage": "https://pc.weixin.qq.com/",
     "license": "BSD-3-Clause",
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
     "shortcuts": [
@@ -14,9 +14,5 @@
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
         "Remove-Item \"$dir\\`$_15_\" -Force -Recurse",
         "Remove-Item \"$dir\\`$R5\" -Force -Recurse"
-    ],
-    "checkver": "微信 ([\\d.]+) for Windows 发布",
-    "autoupdate": {
-        "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
-    }
+    ]
 }
