@@ -52,6 +52,7 @@ v2rayn = '(?<=releases/tag/)[0-9.]+'
 wechat = '(?<=class="version-tag">)[0-9.]+'
 wesing = "(?<=version_pc:\\')[0-9.]+"
 wisecare365 = '(?<=当前版本: )[0-9.]+'
+xiaoji = '(?<=xiaoji_)[0-9.]+(?=\.exe)'
 xyplorer = '(?<=class="smaller">)[0-9.]+'
 
 # 屏蔽无需更新或无法更新的应用
