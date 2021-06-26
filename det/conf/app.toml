@@ -1,6 +1,6 @@
 [network]
 enable_proxy = true # 是否开启代理
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.59"
 proxy_host = "localhost:1080"
 
 # 检测新版本正则集
@@ -29,6 +29,7 @@ iobituninstaller = '(?<=<span>V\s+)[0-9.]+'
 kodobrowser = '(?<=kodo-browser-Windows-x64-v)[0-9.]+(?=.zip)'
 kodoimport = '(?<=kodoimport_windowsOS_64_v)[0-9.]+(?=.tar.gz)'
 lightproxy = '(?<=tag/v)[0-9.]+'
+mouseinc = '(?<=版本：)[0-9.]+'
 n_m3u8dl-cli = '(?<=N_m3u8DL-CLI_v)[0-9r.]+'
 neteasemusic = '[0-9.]+(?=.exe)'
 newfiletime = '(?<=NewFileTime\s+)[0-9.]+'
