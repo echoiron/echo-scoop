@@ -20,3 +20,7 @@ scoop install echo/fscapture
 ```bash
 scoop bucket rm *
 ```
+
+###  Other app buckets
+<https://rasa.github.io/scoop-directory/by-score>
+
