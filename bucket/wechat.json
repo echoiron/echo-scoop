@@ -3,7 +3,7 @@
     "description": "Connecting a billion people with calls, chats, and more",
     "homepage": "https://pc.weixin.qq.com/",
     "license": "BSD-3-Clause",
-    "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.3.0.115.exe#/dl.7z",
+    "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
     "shortcuts": [
         [
             "wechat.exe",
