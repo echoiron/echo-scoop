@@ -60,6 +60,7 @@ xyplorer = '(?<=class="smaller">)[0-9.]+'
 [shieldapp]
 2345pic = true
 baidunetdisk = true
+chrome = true
 eudic = true
 exescope = true
 foobar2000 = true
