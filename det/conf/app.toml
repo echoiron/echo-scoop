@@ -61,6 +61,7 @@ xyplorer = '(?<=class="smaller">)[0-9.]+'
 2345pic = true
 baidunetdisk = true
 chrome = true
+ecloud = true
 eudic = true
 exescope = true
 foobar2000 = true
