@@ -1,7 +1,7 @@
 [network]
 enable_proxy = true # 是否开启代理
 proxy_host = "localhost:1080"
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.84"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.44"
 
 # 检测新版本正则集
 [regx]
@@ -60,6 +60,7 @@ xyplorer = '(?<=class="smaller">)[0-9.]+'
 [shieldapp]
 2345pic = true
 baidunetdisk = true
+bandicam = true
 chrome = true
 ecloud = true
 eudic = true
