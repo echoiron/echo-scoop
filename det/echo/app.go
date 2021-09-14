@@ -53,13 +53,12 @@ func CheckApp(app *App) {
 	rUrl := viper.GetString(fmt.Sprintf("redirecturl.%s", app.Name))
 	var content string
 	if rUrl == "" {
-		content = requestLink(homePage)
+		content = requestLink(homePage, userAgent(app.Name))
 	} else {
 		homePage = rUrl
 		content = redirectLink(homePage)
 	}
 
-	// fmt.Println(content)
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
 	if err != nil || m == nil {
@@ -70,7 +69,6 @@ func CheckApp(app *App) {
 	app.NewVersion = m.String()
 }
 
-// NewVersionDetected 检测到App新版本
 func NewVersionDetected(app *App) {
 	if compareVersion(removerChar(app.Version), removerChar(app.NewVersion)) == -1 {
 		text := fmt.Sprintf("%s %s %s %s", app.Name, app.Version, app.NewVersion, app.Homepage)
@@ -80,7 +78,6 @@ func NewVersionDetected(app *App) {
 	fmt.Printf("%s %s %s %s\n", app.Name, app.Version, app.NewVersion, app.Homepage)
 }
 
-// BucketFiles bucket文件
 func BucketFiles() ([]string, error) {
 	wd := currDir()
 	pd := parentDir(wd)
@@ -94,7 +91,7 @@ func BucketFiles() ([]string, error) {
 	return bucketFiles, nil
 }
 
-// NameNoExt 不包含扩展名称的文件名
+// NameNoExt file name without extension
 func NameNoExt(filePath string) string {
 	base := filepath.Base(filePath)
 	s := strings.Split(base, ".")
@@ -107,7 +104,8 @@ func NameNoExt(filePath string) string {
 	return fileName
 }
 
-// removerChar 移除版本号中的特殊符号(eg:3.12rc3325)
+// removerChar remove special characters
+// eg: 3.12rc3325 --> 3.123325
 func removerChar(str string) string {
 	re := regexp2.MustCompile("[a-zA-Z]", regexp2.None)
 	newStr, err := re.Replace(str, "0", -1, -1)
@@ -117,7 +115,7 @@ func removerChar(str string) string {
 	return newStr
 }
 
-// compareVersion 版本号比较
+// compareVersion
 // 1:version1 > version2
 //-1:version1 < version2
 // 0:version1 = version2
@@ -145,11 +143,10 @@ func compareVersion(version1 string, version2 string) int {
 	return 0
 }
 
-// requestLink 请求链接
-func requestLink(url string) string {
-	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy")) //是否开启代理
+func requestLink(url, userAgent string) string {
+	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy"))
 	c := &fasthttp.Client{}
-	c.Name = viper.GetString(fmt.Sprintf("network.%s", "user_agent"))
+	c.Name = userAgent
 	if proxyState {
 		c.Dial = fasthttpproxy.FasthttpHTTPDialer(viper.GetString(fmt.Sprintf("network.%s", "proxy_host")))
 	}
@@ -163,7 +160,6 @@ func requestLink(url string) string {
 	return string(body)
 }
 
-// redirectLink 重定向链接
 func redirectLink(url string) string {
 	client := &http.Client{
 		CheckRedirect: func(req *http.Request, via []*http.Request) error {
@@ -175,4 +171,14 @@ func redirectLink(url string) string {
 		return url
 	}
 	return res.Header.Get("Location")
+}
+
+// userAgent request header
+func userAgent(name string) string {
+	var header string
+	header = viper.GetString(fmt.Sprintf("useragent.%s", name))
+	if header == "" {
+		header = viper.GetString(fmt.Sprintf("network.%s", "user_agent"))
+	}
+	return header
 }
