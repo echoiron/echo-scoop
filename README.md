@@ -1,6 +1,26 @@
 
 # echo-scoop
 
+### Quick Start
+
+<https://github.com/lukesampson/scoop/wiki/Quick-Start>
+
+### Installing Scoop
+
+Make sure you have allowed PowerShell to execute local scripts
+
+```powershell
+set-executionpolicy remotesigned -scope currentuser
+```
+
+Installing Scoop to Custom Directory
+
+```powershell
+$env:SCOOP='D:\scoop'
+[environment]::setEnvironmentVariable('SCOOP',$env:SCOOP,'User')
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+```
+
 ### How to install bucket
 
 ```bash
