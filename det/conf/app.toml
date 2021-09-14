@@ -1,9 +1,13 @@
 [network]
-enable_proxy = true # 是否开启代理
+enable_proxy = true
 proxy_host = "localhost:1080"
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.44"
 
-# 检测新版本正则集
+# request header
+[useragent]
+default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.47"
+eudic = "/eusoft_eudic_en_win32/12.6.5/E1642045/"
+
+# detect the new version of the regular set
 [regx]
 acmekit = '(?<=软件版本：)[0-9.]+(?=</FONT)'
 adrive = "(?<=latest_version: 'V)[0-9.]+(?=')"
@@ -20,6 +24,7 @@ dismpp = "(?<=What\\'s new ‒ version )[0-9.]+"
 ditto = '(?<=versionDots=")[0-9.]+'
 emeditor = '(?<=Download latest version: v)[0-9.]+'
 es = '(?<=href="/ES-)[0-9.]+(?=\.zip")'
+eudic = '(?<="version":")[0-9.]+'
 fastcopy = '(?<=FastCopy ver )[0-9.]+'
 fscapture = '(?<=Version\s+)[0-9.]+'
 fsresizer = '(?<=Version\s+)[0-9.]+'
@@ -56,14 +61,13 @@ wisecare365 = '(?<=当前版本: )[0-9.]+'
 xiaoji = '(?<=xiaoji_)[0-9.]+(?=\.exe)'
 xyplorer = '(?<=class="smaller">)[0-9.]+'
 
-# 屏蔽无需更新或无法更新的应用
+# block apps that do not need to be updated or cannot be updated
 [shieldapp]
 2345pic = true
 baidunetdisk = true
 bandicam = true
 chrome = true
 ecloud = true
-eudic = true
 exescope = true
 foobar2000 = true
 hdtune = true
@@ -71,7 +75,7 @@ idm = true
 iqiyi = true
 kbootopt = true
 kcleaner = true
-kodoimport = true # tmp
+kodoimport = true
 ksoftmgr = true
 ludashi = true
 notepad2-mod = true
@@ -83,17 +87,18 @@ xiaowan = true
 xiuxiu = true
 xtools = true
 
-# 通过URL重定向匹配新版本
+# match the new version via URL redirection
 [redirecturl]
 bypass = "https://www.bypass.cn/api/download?name=Bypass.zip"
 cosbrowser = "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"
 neteasemusic = "https://music.163.com/api/pc/package/download/latest"
 remnote = "https://www.remnote.io/desktop/windows"
 
-# 替换App的Homepage、URL
+# replace App's Homepage、URL
 [replaceurl]
 acmekit = "http://blog.sina.com.cn/s/blog_89a729a40102wjwh.html"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
+eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
