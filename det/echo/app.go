@@ -62,7 +62,7 @@ func CheckApp(app *App) {
 	re := regexp2.MustCompile(RegxValue(app.Name), 0)
 	m, err := re.FindStringMatch(content)
 	if err != nil || m == nil {
-		log.Printf("-->%s matching version failed", app.Name)
+		fmt.Println(colorPrint(fmt.Sprintf("%s version match failed %s", app.Name, app.Homepage), 0, TextYellow, 0))
 		app.NewVersion = app.Version
 		return
 	}
