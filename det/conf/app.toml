@@ -19,7 +19,7 @@ clash-for-windows = '(?<=v )[0-9.]+'
 claunch = '(?<=CLaunch 64-bit Unicode Ver. )[0-9.]+'
 contextmenumanager = '(?<=tag/)[0-9.]+'
 cosbrowser = '[0-9.]+(?=.exe)'
-dismpp = "(?<=What\\'s new ‒ version )[0-9.]+"
+dismpp = '(?<=releases/tag/v)[0-9.]+'
 ditto = '(?<=versionDots=")[0-9.]+'
 emeditor = '(?<=Download latest version: v)[0-9.]+'
 es = '(?<=href="/ES-)[0-9.]+(?=\.zip")'
@@ -98,6 +98,7 @@ remnote = "https://www.remnote.io/desktop/windows"
 [replaceurl]
 acmekit = "http://blog.sina.com.cn/s/blog_89a729a40102wjwh.html"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
+dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
