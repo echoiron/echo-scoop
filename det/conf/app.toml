@@ -52,6 +52,7 @@ qshell = '(?<=qshell-v)[0-9.]+(?=-windows-amd64)'
 remnote = '[0-9.]+(?=.exe)'
 renamer = '(?<=/download/renamer/installer/)[0-9.]+'
 shadowsocksrr = '(?<=tag/)[0-9.]+'
+stellarplayer = '(?<=version = )[0-9.]+'
 totalcommander = '(?<=Version\s+)[0-9.]+(?=,)'
 ultraiso = '(?<=UltraISO\s+)[0-9.]+(?=\s+released)'
 uninstalltool = '(?<=release-notes">)[0-9.]+'
@@ -115,6 +116,7 @@ oss-browser = "https://help.aliyun.com/document_detail/209974.html"
 ossutil = "https://help.aliyun.com/document_detail/120075.html"
 picgo = "https://github.com/Molunerfinn/PicGo/releases"
 renamer = "https://www.den4b.com/downloads/renamer"
+stellarplayer = "https://player-update.coldlake1.com/version/updater/stable_x64.ini"
 uninstalltool = "https://crystalidea.com/uninstall-tool/download"
 wechat = "https://pc.qq.com/detail/8/detail_11488.html"
 wesing = "https://kg.qq.com/gtimg/mediastyle/musiccm/kg/kg_feature.js"
