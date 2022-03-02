@@ -44,6 +44,7 @@ notepad3 = '(?<=tag/RELEASE_)[0-9.]+'
 ocam = '(?<=oCam_v)[0-9.]+(?=.exe)'
 oss-browser = '(?<=oss-browser/)[0-9.]+(?=/oss-browser-win32-x64.zip)'
 ossutil = '(?<=ossutil/)[0-9.]+(?=/ossutil64.zip)'
+pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
 picgo = '(?<=tree/v)[0-9.]+(?=")'
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
@@ -114,6 +115,7 @@ neatreader = "https://www.neat-reader.cn/downloads/windows"
 ocam = "https://ohsoft.net/update/download.php"
 oss-browser = "https://help.aliyun.com/document_detail/209974.html"
 ossutil = "https://help.aliyun.com/document_detail/120075.html"
+pdfpatcher = "https://www.cnblogs.com/pdfpatcher/archive/2011/02/25/Index.html"
 picgo = "https://github.com/Molunerfinn/PicGo/releases"
 renamer = "https://www.den4b.com/downloads/renamer"
 stellarplayer = "https://player-update.coldlake1.com/version/updater/stable_x64.ini"
