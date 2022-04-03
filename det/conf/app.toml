@@ -4,13 +4,12 @@ proxy_host = "localhost:1080"
 
 # request header
 [useragent]
-default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"
+default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36"
 eudic = "/eusoft_eudic_en_win32/12.7.0/E1642045/"
 
 # detect the new version of the regular set
 [regx]
 115 = '(?<=115pc_)[0-9.]+(?=\.exe)'
-acmekit = '(?<=软件版本：)[0-9.]+(?=</FONT)'
 adrive = "(?<=latest_version: 'V)[0-9.]+(?=')"
 bypass = '[0-9.]+(?=.zip)'
 ccleaner = '(?<=CCleaner v)[0-9.]+'
@@ -19,6 +18,7 @@ chrome = '(?<=版本：)[0-9.]+'
 clash-for-windows = '(?<=v )[0-9.]+'
 claunch = '(?<=CLaunch 64-bit Unicode Ver. )[0-9.]+'
 contextmenumanager = '(?<=tag/)[0-9.]+'
+coodesker = '(?<=tag/v)[0-9.]+'
 cosbrowser = '[0-9.]+(?=.exe)'
 dismpp = '(?<=releases/tag/v)[0-9.]+'
 ditto = '(?<=versionDots=")[0-9.]+'
@@ -68,11 +68,13 @@ zhumu = '(?<=latest-pbt/)[0-9.]+'
 # block apps that do not need to be updated or cannot be updated
 [shieldapp]
 2345pic = true
+acmekit = true
 baidunetdisk = true
 bandicam = true
 beyondcompare = true
 chrome = true
 ecloud = true
+edge = true
 exescope = true
 foobar2000 = true
 goodsync = true
@@ -88,6 +90,7 @@ notepad2-mod = true
 pdfshaper = true
 potplayer = true
 qq = true
+qqlive = true
 ting = true
 wechat = true
 xiaowan = true
@@ -106,7 +109,6 @@ zhumu = "https://url.zhumu.me/783e"
 # replace App's Homepage、URL
 [replaceurl]
 115 = "https://appversion.115.com/1/web/1.0/api/chrome"
-acmekit = "http://blog.sina.com.cn/s/blog_89a729a40102wjwh.html"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
