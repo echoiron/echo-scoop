@@ -9,7 +9,6 @@ import (
 // conf/app.toml 配置
 
 func main() {
-
 	files, err := echo.BucketFiles()
 	if err != nil {
 		log.Panic(err)
