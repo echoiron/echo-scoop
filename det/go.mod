@@ -1,11 +1,11 @@
 module det
 
-go 1.18
+go 1.17
 
 require (
-	github.com/dlclark/regexp2 v1.4.0
+	github.com/dlclark/regexp2 v1.7.0
 	github.com/spf13/viper v1.12.0
-	github.com/valyala/fasthttp v1.37.0
+	github.com/valyala/fasthttp v1.38.0
 )
 
 require (
