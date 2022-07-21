@@ -41,6 +41,43 @@ scoop install echo/fscapture
 scoop bucket rm *
 ```
 
+### Commonly used commands
+```bash
+scoop update
+scoop update *
+scoop install extras/sumatrapdf
+scoop install python@3.7.14
+scoop install wechat -f
+scoop uninstall discord -p
+scoop cache rm notepad2
+scoop cleanup *
+```
+
+###  Commonly used buckets
+- powershell
+```powershell
+scoop bucket add main ;`
+scoop bucket add extras ;`
+scoop bucket add jetbrains https://github.com/Ash258/Scoop-JetBrains ;`
+scoop bucket add echo https://github.com/echoiron/echo-scoop ;`
+scoop bucket add dodorz https://github.com/dodorz/scoop ;`
+scoop bucket add dorado https://github.com/chawyehsu/dorado ;`
+scoop bucket add 42wim https://github.com/42wim/scoop-bucket ;`
+scoop bucket add mochi https://github.com/Qv2ray/mochi
+```
+
+- dos
+```bash
+scoop bucket add main & ^
+scoop bucket add extras & ^
+scoop bucket add jetbrains https://github.com/Ash258/Scoop-JetBrains & ^
+scoop bucket add echo https://github.com/echoiron/echo-scoop & ^
+scoop bucket add dodorz https://github.com/dodorz/scoop & ^
+scoop bucket add dorado https://github.com/chawyehsu/dorado & ^
+scoop bucket add 42wim https://github.com/42wim/scoop-bucket & ^
+scoop bucket add mochi https://github.com/Qv2ray/mochi
+```
+
 ###  Other app buckets
 <https://rasa.github.io/scoop-directory/by-score>
 
