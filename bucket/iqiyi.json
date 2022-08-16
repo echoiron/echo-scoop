@@ -1,9 +1,9 @@
 {
-    "version": "9.7.160.6118",
+    "version": "9.8.162.6207",
     "description": "爱奇艺，中国高品质视频娱乐服务提供者",
     "homepage": "https://www.iqiyi.com/",
     "license": "BSD-3-Clause",
-    "url": "https://code.aliyun.com/eft/sw/raw/main/src/iqiyi.7z",
+    "url": "https://yourdrive-my.sharepoint.cn/:u:/g/personal/xmod_yourdrive_partner_onmschina_cn/EchJoJ0wBc1JgIwYmkKOyz8BxJ3hq9GMyPucRsOX2Bw6sg?download=1#/dl.7z",
     "bin": "IQIYIClient.exe",
     "shortcuts": [
         [
