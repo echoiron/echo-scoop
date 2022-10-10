@@ -31,6 +31,7 @@ eudic = '(?<="version":")[0-9.]+'
 fastcopy = '(?<=FastCopy ver )[0-9.]+'
 fscapture = '(?<=Version\s+)[0-9.]+'
 fsresizer = '(?<=Version\s+)[0-9.]+'
+gost = '(?<=releases/tag/)v?[0-9.]+'
 hbuilderx = "(?<=\"version\":\\s+\")[0-9.]+"
 iobitdriverbooster = '(?<=<span>V\s+)[0-9.]+'
 iobituninstaller = '(?<=<span>V\s+)[0-9.]+'
