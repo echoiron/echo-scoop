@@ -11,7 +11,7 @@ eudic = "/eusoft_eudic_en_win32/13.0.0/E1642045/"
 [regx]
 4kvideodownloader = "(?<=videodownloader_)[0-9.]+(?=_windows_x64)"
 115 = '(?<=115pc_)[0-9.]+(?=\.exe)'
-adrive = "(?<=latest_version: 'V)[0-9.]+(?=')"
+adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
 bypass = '[0-9.]+(?=.zip)'
 ccleaner = '(?<=CCleaner v)[0-9.]+'
@@ -120,6 +120,7 @@ zhumu = "https://url.zhumu.me/783e"
 [replaceurl]
 4kvideodownloader = "https://www.4kdownload.com/downloads/12"
 115 = "https://appversion.115.com/1/web/1.0/api/chrome"
+adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
