@@ -1,0 +1,15 @@
+{
+    "version": "1.4.8",
+    "description": "A truly minimal markdown editor",
+    "homepage": "https://typora.io",
+    "license": "BSD-3-Clause",
+    "url": "https://download.typora.io/windows/typora-setup-x64-1.4.8.exe",
+    "innosetup": true,
+    "bin": "Typora.exe",
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ]
+}

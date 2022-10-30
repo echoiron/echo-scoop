@@ -63,6 +63,7 @@ skylark = '(?<=/skylark_x64-v)[0-9.]+(?=\.7z)'
 stellarplayer = '(?<=version = )[0-9.]+'
 tencentmeeting = '(?<="version":")[0-9.]+(?=")'
 totalcommander = '(?<=Version\s+)[0-9.]+(?=,)'
+typora = "(?<=windows/typora-setup-x64-)[0-9.]+(?=\\.exe)"
 ultraiso = '(?<=UltraISO\s+)[0-9.]+(?=\s+released)'
 uninstalltool = '(?<=release-notes">)[0-9.]+'
 v2rayn = '(?<=releases/tag/)[0-9.]+'
@@ -139,5 +140,6 @@ renamer = "https://www.den4b.com/downloads/renamer"
 skylark = "https://api.github.com/repos/adonais/skylark/releases/latest"
 stellarplayer = "https://player-update.coldlake1.com/version/updater/stable_x64.ini"
 tencentmeeting = "https://meeting.tencent.com/web-service/query-download-info?q=%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D&nonce=1234567890abcdef"
+typora = "https://typora.io/releases/stable?no-warning"
 uninstalltool = "https://crystalidea.com/uninstall-tool/download"
 wesing = "https://kg.qq.com/gtimg/mediastyle/musiccm/kg/kg_feature.js"
