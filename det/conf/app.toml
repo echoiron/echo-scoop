@@ -62,6 +62,7 @@ shadowsocksrr = '(?<=releases/tag/)v?[0-9.]+'
 skylark = '(?<=/skylark_x64-v)[0-9.]+(?=\.7z)'
 stellarplayer = '(?<=version = )[0-9.]+'
 tencentmeeting = '(?<="version":")[0-9.]+(?=")'
+ting = "(?<=ver\\=)[0-9.]+"
 totalcommander = '(?<=Version\s+)[0-9.]+(?=,)'
 typora = "(?<=windows/typora-setup-x64-)[0-9.]+(?=\\.exe)"
 ultraiso = '(?<=UltraISO\s+)[0-9.]+(?=\s+released)'
@@ -101,7 +102,6 @@ pdfshaper = true
 potplayer = true
 qq = true
 qqlive = true
-ting = true
 typeeasy = true
 wechat = true
 xiaowan = true
