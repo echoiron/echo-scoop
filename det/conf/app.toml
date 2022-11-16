@@ -4,8 +4,8 @@ proxy_host = "localhost:1080"
 
 # request header
 [useragent]
-default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
-eudic = "/eusoft_eudic_en_win32/13.0.0/E1642045/"
+default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+eudic = "/eusoft_eudic_en_win32/13.1.0/E1642045/"
 
 # detect the new version of the regular set
 [regx]
@@ -23,6 +23,7 @@ claunch = '(?<=CLaunch 64-bit Unicode Ver. )[0-9.]+'
 contextmenumanager = '(?<=releases/tag/)v?[0-9.]+'
 coodesker = '(?<=releases/tag/)v?[0-9.]+'
 cosbrowser = '[0-9.]+(?=.exe)'
+dingtalk = '(?<=Release/DingTalkUpdate_v)[0-9.]+(?=\.zip)'
 dismpp = '(?<=releases/tag/)v?[0-9.]+'
 ditto = '(?<=versionDots=")[0-9.]+'
 emeditor = '(?<=Download latest version: v)[0-9.]+'
@@ -124,6 +125,7 @@ zhumu = "https://url.zhumu.me/783e"
 adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
+dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
