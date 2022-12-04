@@ -27,7 +27,7 @@ cosbrowser = '[0-9.]+(?=.exe)'
 dingtalk = '(?<=Release/DingTalkUpdate_v)[0-9.]+(?=\.zip)'
 dismpp = '(?<=releases/tag/)v?[0-9.]+'
 ditto = '(?<=versionDots=")[0-9.]+'
-emeditor = '(?<=Download latest version: v)[0-9.]+'
+emeditor = '(?<=v)22\.[0-9.]+'
 es = '(?<=href="/ES-)[0-9.]+(?=\.zip")'
 eudic = '(?<="version":")[0-9.]+'
 fastcopy = '(?<=FastCopy ver )[0-9.]+'
@@ -129,6 +129,7 @@ bitcomet = "http://www.bitcomet.com/en/downloads"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
 dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
+emeditor = "https://support.emeditor.com/en/downloads"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
