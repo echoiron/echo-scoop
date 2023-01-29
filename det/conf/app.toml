@@ -49,7 +49,7 @@ notepad2 = '(?<=releases/tag/)v?[0-9r.]+'
 notepad3 = '(?<=releases/tag/RELEASE_)[0-9.]+'
 ocam = '(?<=oCam_v)[0-9.]+(?=.exe)'
 oss-browser = '(?<=oss-browser/)[0-9.]+(?=/oss-browser-win32-x64.zip)'
-ossutil = '(?<=ossutil/)[0-9.]+(?=/ossutil64.zip)'
+ossutil = '(?<=ossutil-v?)[0-9.]+(?=-windows-amd64.zip)'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
 picgo = '(?<=tree/v)[0-9.]+(?=")'
@@ -137,7 +137,7 @@ kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
 neatreader = "https://www.neat-reader.cn/downloads/windows"
 ocam = "https://ohsoft.net/update/download.php"
 oss-browser = "https://help.aliyun.com/document_detail/209974.html"
-ossutil = "https://help.aliyun.com/document_detail/120075.html"
+ossutil = "https://help.aliyun.com/help/json/document_detail_4_pcp.json?docId=120075&website=cn&language=zh"
 pdf-xchange-editor-plus = "https://www.tracker-software.com/product/downloads"
 pdfpatcher = "https://www.cnblogs.com/pdfpatcher/archive/2011/02/25/Index.html"
 picgo = "https://github.com/Molunerfinn/PicGo/releases"
