@@ -4,7 +4,7 @@ proxy_host = "localhost:1080"
 
 # request header
 [useragent]
-default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
 eudic = "/eusoft_eudic_en_win32/13.1.0/E1642045/"
 
 # detect the new version of the regular set
@@ -27,7 +27,7 @@ cosbrowser = '[0-9.]+(?=.exe)'
 dingtalk = '(?<=Release/DingTalkUpdate_v)[0-9.]+(?=\.zip)'
 dismpp = '(?<=releases/tag/)v?[0-9.]+'
 ditto = '(?<=versionDots=")[0-9.]+'
-emeditor = '(?<=v)22\.[0-9.]+'
+emeditor = '(?<=emed64_)[0-9.]+(?=_portable)'
 es = '(?<=href="/ES-)[0-9.]+(?=\.zip")'
 eudic = '(?<="version":")[0-9.]+'
 fastcopy = '(?<=FastCopy ver )[0-9.]+'
@@ -115,6 +115,7 @@ zhumu = true
 [redirecturl]
 bypass = "https://www.bypass.cn/api/download?name=Bypass.zip"
 cosbrowser = "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"
+emeditor = "https://support.emeditor.com/en/downloads/latest/portable/64"
 neteasemusic = "https://music.163.com/api/pc/package/download/latest"
 remnote = "https://www.remnote.io/desktop/windows"
 zhumu = "https://url.zhumu.me/783e"
@@ -129,7 +130,6 @@ bitcomet = "http://www.bitcomet.com/en/downloads"
 ccleaner = "https://www.ccleaner.com/ccleaner/download"
 dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
-emeditor = "https://support.emeditor.com/en/downloads"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
