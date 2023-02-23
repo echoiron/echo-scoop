@@ -5,7 +5,7 @@ proxy_host = "localhost:1080"
 # request header
 [useragent]
 default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
-eudic = "/eusoft_eudic_en_win32/13.1.0/E1642045/"
+eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 
 # detect the new version of the regular set
 [regx]
@@ -99,15 +99,19 @@ kodoimport = true
 ksoftmgr = true
 ludashi = true
 mouseinc = true
+myhash = true
 notepad2-mod = true
+pdfelement = true
 pdfshaper = true
 potplayer = true
 qq = true
 qqlive = true
 typeeasy = true
 wechat = true
+winrar = true
 xiaowan = true
 xiuxiu = true
+xshellplus = true
 xtools = true
 zhumu = true
 
