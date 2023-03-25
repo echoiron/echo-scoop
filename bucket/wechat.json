@@ -5,8 +5,7 @@
     "license": "BSD-3-Clause",
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
     "post_install": [
-        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
-        "Remove-Item \"$dir\\`$_15_\" -Force -Recurse"
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
     ],
     "shortcuts": [
         [
