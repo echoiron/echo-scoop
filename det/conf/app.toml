@@ -13,6 +13,7 @@ eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 115 = '(?<=115pc_)[0-9.]+(?=\.exe)'
 adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
+alixby = '(?<=releases/tag/)v?[0-9.]+'
 bitcomet = '(?<="version"\>)[0-9.]+'
 bypass = '[0-9.]+(?=.zip)'
 ccleaner = '(?<=CCleaner v)[0-9.]+'
