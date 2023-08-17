@@ -1,3 +1,4 @@
+// 在 main.go 中
 package main
 
 import (
@@ -6,9 +7,8 @@ import (
 	"sync"
 )
 
-// conf/app.toml 配置
-
 func main() {
+	log.SetFlags(log.Lshortfile | log.LstdFlags)
 	files, err := echo.BucketFiles()
 	if err != nil {
 		log.Panic(err)
@@ -22,12 +22,7 @@ func main() {
 			continue
 		}
 		wg.Add(1)
-		app := echo.ReadApp(name)
-		go func() {
-			defer wg.Done()
-			echo.CheckApp(&app)
-			echo.NewVersionDetected(&app)
-		}()
+		go echo.ProcessApp(&wg, name)
 	}
 	wg.Wait()
 }

@@ -7,13 +7,14 @@ import (
 	"github.com/spf13/viper"
 	"github.com/valyala/fasthttp"
 	"github.com/valyala/fasthttp/fasthttpproxy"
-	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"path/filepath"
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 )
 
 // App echo-scoop/bucket/xx.json
@@ -28,20 +29,33 @@ type App struct {
 	//Bin string `json:"bin"`
 }
 
-func ReadApp(name string) App {
-	fileName := NameNoExt(name)
-	file, err := ioutil.ReadFile(name)
+func ProcessApp(wg *sync.WaitGroup, name string) {
+	defer wg.Done()
+
+	app, err := ReadApp(name)
 	if err != nil {
-		log.Println(err)
+		log.Printf("Error processing app %s: %s\n", name, err)
+		return
+	}
+	CheckApp(&app)
+	NewVersionDetected(&app)
+}
+
+func ReadApp(name string) (App, error) {
+	fileName := NameNoExt(name)
+	file, err := os.ReadFile(name)
+	if err != nil {
+		log.Printf("Error reading file %s: %s\n", name, err)
+		return App{}, err
 	}
 
-	app := App{}
-	err = json.Unmarshal(file, &app)
-	if err != nil {
-		log.Println(err)
+	var app App
+	if err := json.Unmarshal(file, &app); err != nil {
+		log.Printf("Error unmarshaling JSON for file %s: %s\n", name, err)
+		return App{}, err
 	}
 	app.Name = fileName
-	return app
+	return app, nil
 }
 
 func CheckApp(app *App) {
@@ -117,7 +131,7 @@ func removerChar(str string) string {
 
 // compareVersion
 // 1:version1 > version2
-//-1:version1 < version2
+// -1:version1 < version2
 // 0:version1 = version2
 func compareVersion(version1 string, version2 string) int {
 	versionA := strings.Split(version1, ".")

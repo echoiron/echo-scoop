@@ -31,6 +31,7 @@ ditto = '(?<=versionDots=")[0-9.]+'
 emeditor = '(?<=emed64_)[0-9.]+(?=_portable)'
 es = '(?<=href="/ES-)[0-9.]+(?=\.zip")'
 eudic = '(?<="version":")[0-9.]+'
+everedit = '(?<=EverEdit )[0-9.]+'
 fastcopy = '(?<=FastCopy ver )[0-9.]+'
 fscapture = '(?<=Version\s+)[0-9.]+'
 fsresizer = '(?<=Version\s+)[0-9.]+'
@@ -137,6 +138,7 @@ ccleaner = "https://www.ccleaner.com/ccleaner/download"
 dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
+everedit = 'http://www.everedit.cn/changelog'
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
 idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
