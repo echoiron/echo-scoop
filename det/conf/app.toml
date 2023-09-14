@@ -50,7 +50,7 @@ newfiletime = '(?<=NewFileTime\s+)[0-9.]+'
 notepad2 = '(?<=releases/tag/)v?[0-9r.]+'
 notepad3 = '(?<=releases/tag/RELEASE_)[0-9.]+'
 ocam = '(?<=oCam_v)[0-9.]+(?=.exe)'
-oss-browser = '(?<=oss-browser/)[0-9.]+(?=/oss-browser-win32-x64.zip)'
+oss-browser = '(?<=releases/tag/)v?[0-9.]+'
 ossutil = '(?<=releases/tag/)v?[0-9.]+'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
@@ -144,7 +144,6 @@ idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
 neatreader = "https://www.neat-reader.cn/downloads/windows"
 ocam = "https://ohsoft.net/update/download.php"
-oss-browser = "https://help.aliyun.com/document_detail/209974.html"
 ossutil = "https://github.com/aliyun/ossutil"
 pdf-xchange-editor-plus = "https://www.tracker-software.com/product/downloads"
 pdfpatcher = "https://www.cnblogs.com/pdfpatcher/archive/2011/02/25/Index.html"
