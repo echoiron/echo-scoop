@@ -23,7 +23,7 @@ chrome = '(?<=版本：)[0-9.]+'
 clash-for-windows = '(?<=releases/tag/)v?[0-9.]+'
 claunch = '(?<=CLaunch 64-bit Unicode Ver. )[0-9.]+'
 contextmenumanager = '(?<=releases/tag/)v?[0-9.]+'
-coodesker = '(?<=releases/tag/)v?[0-9.]+'
+coodesker = '(?<=ver": ")v?[0-9.]+(?=\")' # "ver": "2.0.0.7"
 cosbrowser = '[0-9.]+(?=.exe)'
 dingtalk = '(?<=Release/DingTalkUpdate_v)[0-9.]+(?=\.zip)'
 dismpp = '(?<=releases/tag/)v?[0-9.]+'
@@ -135,6 +135,7 @@ adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
 bitcomet = "http://www.bitcomet.com/en/downloads"
 ccleaner = "https://www.ccleaner.com/ccleaner/version-history"
+coodesker = "https://www.coodesker.com/coodesker-desktop/release2.json"
 dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
