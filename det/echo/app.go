@@ -160,7 +160,7 @@ func compareVersion(version1 string, version2 string) int {
 func requestLink(url, userAgent string) string {
 	proxyState := viper.GetBool(fmt.Sprintf("network.%s", "enable_proxy"))
 	c := &fasthttp.Client{
-		ReadBufferSize: 8192,
+		ReadBufferSize: 65536,
 	}
 	c.Name = userAgent
 	if proxyState {
