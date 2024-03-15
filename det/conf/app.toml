@@ -82,6 +82,7 @@ zhumu = '(?<=latest-pbt/)[0-9.]+'
 
 # block apps that do not need to be updated or cannot be updated
 [shieldapp]
+4kvideodownloaderplus = true
 2345pic = true
 acmekit = true
 baidunetdisk = true
