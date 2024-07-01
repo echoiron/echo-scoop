@@ -59,7 +59,7 @@ protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
 q-dir = '(?<=New in version )[0-9.]+'
 qshell = '(?<=qshell-v)[0-9.]+(?=-windows-amd64)'
-remnote = '[0-9.]+(?=-Setup.exe)'
+remnote = '(?<=RemNote-)[0-9.]+(?=-Setup.exe)'
 renamer = '(?<=/download/renamer/installer/)[0-9.]+'
 sandboxie-plus = '(?<=releases/tag/)v?[0-9.]+'
 shadowsocksrr = '(?<=releases/tag/)v?[0-9.]+'
@@ -125,7 +125,7 @@ bypass = "https://www.bypass.cn/api/download?name=Bypass.zip"
 cosbrowser = "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"
 emeditor = "https://support.emeditor.com/en/downloads/latest/portable/64"
 neteasemusic = "https://music.163.com/api/pc/package/download/latest"
-remnote = "https://www.remnote.io/desktop/windows"
+remnote = "https://backend.remnote.com/desktop/windows"
 zhumu = "https://url.zhumu.me/783e"
 
 # replace App's Homepage、URL
