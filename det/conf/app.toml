@@ -10,7 +10,7 @@ eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 # detect the new version of the regular set
 [regx]
 4kvideodownloader = "(?<=videodownloader_)[0-9.]+(?=_windows_x64)"
-115 = '(?<=window_115":{"version_code":")[0-9.]+'
+115chrome = '(?<=window_115":{"version_code":")[0-9.]+'
 adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
 alixby = '(?<=releases/tag/)v?[0-9.]+'
@@ -47,8 +47,8 @@ n-m3u8dl-cli = '(?<=N_m3u8DL-CLI_v)[0-9r.]+'
 neatreader = '(?<=最新版本：)[0-9.]+'
 neteasemusic = '[0-9.]+(?=(_32)?\.exe)'
 newfiletime = '(?<=NewFileTime\s+)[0-9.]+'
-notepad4 = '(?<=releases/tag/)v?[0-9r.]+'
 notepad3 = '(?<=releases/tag/RELEASE_)[0-9.]+'
+notepad4 = '(?<=releases/tag/)v?[0-9r.]+'
 ocam = '(?<=oCam_v)[0-9.]+(?=.exe)'
 oss-browser = '(?<=releases/tag/)v?[0-9.]+'
 ossutil = '(?<=releases/tag/)v?[0-9.]+'
@@ -83,6 +83,7 @@ zhumu = '(?<=latest-pbt/)[0-9.]+'
 # block apps that do not need to be updated or cannot be updated
 [shieldapp]
 4kvideodownloaderplus = true
+115 = true
 2345pic = true
 acmekit = true
 baidunetdisk = true
@@ -131,7 +132,7 @@ zhumu = "https://url.zhumu.me/783e"
 # replace App's Homepage、URL
 [replaceurl]
 4kvideodownloader = "https://www.4kdownload.com/downloads/12"
-115 = "https://appversion.115.com/1/web/1.0/api/chrome"
+115chrome = "https://appversion.115.com/1/web/1.0/api/chrome"
 adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
 bitcomet = "http://www.bitcomet.com/en/downloads"
