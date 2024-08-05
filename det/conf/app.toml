@@ -9,7 +9,6 @@ eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 
 # detect the new version of the regular set
 [regx]
-4kvideodownloader = "(?<=videodownloader_)[0-9.]+(?=_windows_x64)"
 115chrome = '(?<=window_115":{"version_code":")[0-9.]+'
 adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
@@ -55,6 +54,7 @@ ossutil = '(?<=releases/tag/)v?[0-9.]+'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
 picgo = '(?<=tree/v)[0-9.]+(?=")'
+pixpin = "(?<=download\\.pixpinapp\\.com/PixPin_)[0-9.]+(?=\\.exe)"
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
 q-dir = '(?<=New in version )[0-9.]+'
@@ -82,6 +82,7 @@ zhumu = '(?<=latest-pbt/)[0-9.]+'
 
 # block apps that do not need to be updated or cannot be updated
 [shieldapp]
+4kvideodownloader = true
 4kvideodownloaderplus = true
 115 = true
 2345pic = true
@@ -131,7 +132,6 @@ zhumu = "https://url.zhumu.me/783e"
 
 # replace App's Homepage、URL
 [replaceurl]
-4kvideodownloader = "https://www.4kdownload.com/downloads/12"
 115chrome = "https://appversion.115.com/1/web/1.0/api/chrome"
 adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
