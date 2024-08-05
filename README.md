@@ -45,11 +45,13 @@ scoop bucket rm *
 ```bash
 scoop update
 scoop update *
-scoop install extras/sumatrapdf
-scoop install python@3.7.14
+scoop install echo/notepad4
+scoop install 7zip git --global
+scoop install aria2 curl grep sed less touch
+scoop install python@3.12.4
 scoop install wechat -f
 scoop uninstall discord -p
-scoop cache rm notepad2
+scoop cache rm *
 scoop cleanup *
 ```
 
@@ -58,26 +60,21 @@ scoop cleanup *
 ```powershell
 scoop bucket add main ;`
 scoop bucket add extras ;`
-scoop bucket add jetbrains https://github.com/Ash258/Scoop-JetBrains ;`
 scoop bucket add echo https://github.com/echoiron/echo-scoop ;`
 scoop bucket add dodorz https://github.com/dodorz/scoop ;`
-scoop bucket add dorado https://github.com/chawyehsu/dorado ;`
-scoop bucket add 42wim https://github.com/42wim/scoop-bucket ;`
-scoop bucket add mochi https://github.com/Qv2ray/mochi
+scoop bucket add dorado https://github.com/chawyehsu/dorado
 ```
 
 - dos
 ```bash
 scoop bucket add main & ^
 scoop bucket add extras & ^
-scoop bucket add jetbrains https://github.com/Ash258/Scoop-JetBrains & ^
 scoop bucket add echo https://github.com/echoiron/echo-scoop & ^
 scoop bucket add dodorz https://github.com/dodorz/scoop & ^
-scoop bucket add dorado https://github.com/chawyehsu/dorado & ^
-scoop bucket add 42wim https://github.com/42wim/scoop-bucket & ^
-scoop bucket add mochi https://github.com/Qv2ray/mochi
+scoop bucket add dorado https://github.com/chawyehsu/dorado
 ```
 
 ###  Other app buckets
-<https://rasa.github.io/scoop-directory/by-score>
+<https://scoop.sh/#/buckets>
 
+<https://rasa.github.io/scoop-directory/by-score>
