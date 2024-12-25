@@ -9,7 +9,7 @@ eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 
 # detect the new version of the regular set
 [regx]
-115chrome = '(?<=window_115":{"version_code":")[0-9.]+'
+115chrome = '(?<="version_code":")[0-9.]+'
 adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
 alixby = '(?<=releases/tag/)v?[0-9.]+'
