@@ -53,8 +53,8 @@ oss-browser = '(?<=releases/tag/)v?[0-9.]+'
 ossutil = '(?<=releases/tag/)v?[0-9.]+'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
-picgo = '(?<=tree/v)[0-9.]+(?=")'
-pixpin = "(?<=download\\.pixpinapp\\.com/PixPin_)[0-9.]+(?=\\.exe)"
+picgo = '(?<=releases/tag/)v?[0-9.]+'
+pixpin = "(?<=/PixPin_)[0-9.]+(?=\\.exe)"
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
 q-dir = '(?<=New in version )[0-9.]+'
@@ -63,7 +63,7 @@ remnote = '(?<=RemNote-)[0-9.]+(?=-Setup.exe)'
 renamer = '(?<=/download/renamer/installer/)[0-9.]+'
 sandboxie-plus = '(?<=releases/tag/)v?[0-9.]+'
 shadowsocksrr = '(?<=releases/tag/)v?[0-9.]+'
-skylark = '(?<=/skylark_x64-v)[0-9.]+(?=\.7z)'
+skylark = '(?<=releases/tag/)v?[0-9.]+'
 stellarplayer = '[0-9.]+(?=_official_stable_mini_x64\.exe)'
 swoff = '(?<=Switch Off\s*)[0-9.]+'
 tencentmeeting = '(?<="version":")[0-9.]+(?=")'
@@ -150,9 +150,9 @@ ocam = "https://ohsoft.net/update/download.php"
 ossutil = "https://github.com/aliyun/ossutil"
 pdf-xchange-editor-plus = "https://www.tracker-software.com/product/downloads"
 pdfpatcher = "https://www.cnblogs.com/pdfpatcher/archive/2011/02/25/Index.html"
-picgo = "https://github.com/Molunerfinn/PicGo/releases"
+picgo = "https://github.com/Molunerfinn/PicGo"
 renamer = "https://www.den4b.com/downloads/renamer"
-skylark = "https://api.github.com/repos/adonais/skylark/releases/latest"
+skylark = "https://github.com/adonais/skylark"
 stellarplayer = "https://player-update.coldlake1.com/version/info"
 swoff = "http://www.airytec.com/en/switch-off/get.aspx"
 tencentmeeting = "https://meeting.tencent.com/web-service/query-download-info?q=%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D&nonce=1234567890abcdef"
