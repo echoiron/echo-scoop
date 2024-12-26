@@ -54,7 +54,7 @@ ossutil = '(?<=releases/tag/)v?[0-9.]+'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
 picgo = '(?<=releases/tag/)v?[0-9.]+'
-pixpin = "(?<=/PixPin_)[0-9.]+(?=\\.exe)"
+pixpin = "(?<=official-log/)[0-9.]+"
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
 q-dir = '(?<=New in version )[0-9.]+'
