@@ -20,7 +20,7 @@ centbrowser = '(?<=Version: )[0-9.]+'
 chfs = '(?<=chfs-windows-x64-)[0-9.]+(?=\.zip)'
 chrome = '(?<=版本：)[0-9.]+'
 clash-for-windows = '(?<=releases/tag/)v?[0-9.]+'
-claunch = '(?<=CLaunch Ver\.\s*)[0-9.]+' # CLaunch Ver. 4.06 (Nov. 10, 2023)
+claunch = '(?<=CLaunch Ver\.\s*)[0-9.]+' # CLaunch Ver. 4.10 (Feb. 1, 2025)
 contextmenumanager = '(?<=releases/tag/)v?[0-9.]+'
 coodesker = '(?<=ver": ")v?[0-9.]+(?=\")' # "ver": "2.0.0.7"
 cosbrowser = '[0-9.]+(?=.exe)'
