@@ -26,7 +26,7 @@ coodesker = '(?<=ver": ")v?[0-9.]+(?=\")' # "ver": "2.0.0.7"
 cosbrowser = '[0-9.]+(?=.exe)'
 dingtalk = '(?<=Release/DingTalkUpdate_v)[0-9.]+(?=\.zip)'
 dismpp = '(?<=releases/tag/)v?[0-9.]+'
-ditto = '(?<=versionDots=")[0-9.]+'
+ditto = '(?<=releases/tag/)v?[0-9.]+'
 emeditor = '(?<=emed64_)[0-9.]+(?=_portable)'
 es = '(?<=href="/ES-)[0-9.]+(?=\.x64\.zip")'
 eudic = '(?<="version":")[0-9.]+'
@@ -140,6 +140,7 @@ ccleaner = "https://www.ccleaner.com/ccleaner/version-history"
 coodesker = "https://www.coodesker.com/coodesker-desktop/release2.json"
 dingtalk = "https://im.dingtalk.com/manifest/new/release_windows_vista_later_manual_lowpriority.json"
 dismpp = "https://github.com/Chuyu-Team/Dism-Multi-language"
+ditto = "https://github.com/sabrogden/Ditto"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 everedit = 'http://www.everedit.cn/changelog'
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
