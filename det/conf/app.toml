@@ -54,7 +54,7 @@ ossutil = '(?<=releases/tag/)v?[0-9.]+'
 pdf-xchange-editor-plus = '(?<="versionname"><strong>)[0-9.]+'
 pdfpatcher = '(?<=下载：?.+版\s*)[0-9.]+'
 picgo = '(?<=releases/tag/)v?[0-9.]+'
-pixpin = "(?<=official-log/)[0-9.]+"
+pixpin = "(?<=PixPin_cn_zh-cn_)[0-9.]+"
 protoc = '(?<=Protocol Buffers v)[0-9.]+'
 proxifier = '(?<=Version: )[0-9.]+'
 q-dir = '(?<=New in version )[0-9.]+'
@@ -152,6 +152,7 @@ ossutil = "https://github.com/aliyun/ossutil"
 pdf-xchange-editor-plus = "https://www.tracker-software.com/product/downloads"
 pdfpatcher = "https://www.cnblogs.com/pdfpatcher/archive/2011/02/25/Index.html"
 picgo = "https://github.com/Molunerfinn/PicGo"
+pixpin = "https://pixpin.cn/download/"
 renamer = "https://www.den4b.com/downloads/renamer"
 skylark = "https://github.com/adonais/skylark"
 stellarplayer = "https://player-update.coldlake1.com/version/info"
