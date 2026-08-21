@@ -10,6 +10,7 @@ eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 # detect the new version of the regular set
 [regx]
 115chrome = '(?<="version_code":")[0-9.]+'
+115life = '(?<="115Life_Windows_X64":\{"app_os":72,"version_code":")[0-9.]+'
 adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
 alixby = '(?<=releases/tag/)v?[0-9.]+'
@@ -84,7 +85,6 @@ zhumu = '(?<=latest-pbt/)[0-9.]+'
 [shieldapp]
 4kvideodownloader = true
 4kvideodownloaderplus = true
-115 = true
 2345pic = true
 acmekit = true
 baidunetdisk = true
@@ -147,6 +147,7 @@ zhumu = "https://url.zhumu.me/783e"
 # replace App's Homepage、URL
 [replaceurl]
 115chrome = "https://appversion.115.com/1/web/1.0/api/chrome"
+115life = "https://appversion.115.com/1/web/1.0/api/getMultiVer"
 adrive = "https://www.aliyundrive.com/desktop/version/update.json"
 aida64 = "https://www.aida64.com/downloads"
 bitcomet = "http://www.bitcomet.com/en/downloads"
