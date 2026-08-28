@@ -65,10 +65,10 @@ renamer = '(?<=/download/renamer/installer/)[0-9.]+'
 sandboxie-plus = '(?<=releases/tag/v?)[0-9.]+'
 shadowsocksrr = '(?<=releases/tag/v?)[0-9.]+'
 skylark = '(?<=releases/tag/v?)[0-9.]+'
-stellarplayer = '[0-9.]+(?=_official_stable_mini_x64\.exe)'
+stellarplayer = '(?<="official":\s*\{\s*"x64":\s*\{\s*"full":\s*\{\s*"url":\s*".+?",\s*"size":\s*\d+,\s*"md5":\s*"[a-f0-9]+",\s*"version":\s*")[0-9]+'
 swoff = '(?<=Switch Off\s*)[0-9.]+'
 tencentmeeting = '(?<="version":")[0-9.]+(?=")'
-ting = "(?<=ver\\=)[0-9.]+"
+ting = '(?<=ting_en_setup\.zip\?v=)[0-9.]+'
 totalcommander = '(?<=version )[0-9.]+(?= of Total Commander)'
 typora = "(?<=windows/typora-setup-x64-)[0-9.]+(?=\\.exe)"
 ultraiso = '(?<=UltraISO\s+)[0-9.]+(?=\s+released)'
