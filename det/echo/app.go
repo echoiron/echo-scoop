@@ -3,10 +3,6 @@ package echo
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/dlclark/regexp2"
-	"github.com/spf13/viper"
-	"github.com/valyala/fasthttp"
-	"github.com/valyala/fasthttp/fasthttpproxy"
 	"log"
 	"net/http"
 	"os"
@@ -15,6 +11,11 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/dlclark/regexp2"
+	"github.com/spf13/viper"
+	"github.com/valyala/fasthttp"
+	"github.com/valyala/fasthttp/fasthttpproxy"
 )
 
 // App echo-scoop/bucket/xx.json
