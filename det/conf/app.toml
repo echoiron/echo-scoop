@@ -1,10 +1,10 @@
 [network]
 enable_proxy = true
 proxy_host = "localhost:1080"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
 
 # request header
 [useragent]
-default = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
 eudic = "/eusoft_eudic_en_win32/13.1.6/E1642045/"
 
 # detect the new version of the regular set
@@ -15,6 +15,7 @@ adrive = "(?<=aliyun-drive-desktop-version/)[0-9.]+"
 aida64 = '(?<=version">)[0-9.]+(?=</td>)'
 alixby = '(?<=releases/tag/)v?[0-9.]+'
 bitcomet = '(?<="version"\>)[0-9.]+'
+boxplayer = '(?<=releases/tag/v?)[0-9.]+'
 bypass = '[0-9.]+(?=.zip)'
 ccleaner = '(?<=latest-version">v)[0-9.]+' # latest-version">v6.15.10623
 centbrowser = '(?<=Version: )[0-9.]+'
@@ -37,15 +38,16 @@ fscapture = '(?<=Version\s+)[0-9.]+'
 fsresizer = '(?<=Version\s+)[0-9.]+'
 gost = '(?<=releases/tag/v?)[0-9.]+'
 hbuilderx = "(?<=\"version\":\\s+\")[0-9.]+"
-iobitdriverbooster = '(?<=V )[0-9.]+(?= \|)'
+iobitdriverbooster = '(?<=<h3>Driver Booster</h3>\s*<div[^>]*>\s*<span class="pill">v)[0-9]+(?:\.[0-9]+){3}(?=</span>)'
 iobituninstaller = '(?<=V )[0-9.]+(?= \|)'
 kodobrowser = '(?<=kodo-browser-Windows-x64-v)[0-9.]+(?=.zip)'
 kodoimport = '(?<=kodoimport_windowsOS_64_v)[0-9.]+(?=.tar.gz)'
 lightproxy = '(?<=releases/tag/v?)[0-9.]+'
+mobaxterm = '(?<=MobaXterm_Portable_v)[0-9]+(?:\.[0-9]+)+(?=\.zip)'
 mouseinc = '(?<=版本：)[0-9.]+'
 n-m3u8dl-cli = '(?<=releases/tag/v?)[0-9r.]+'
 neatreader = '(?<=最新版本：)[0-9.]+'
-neteasemusic = '[0-9.]+(?=(_32)?\.exe)'
+neteasemusic = '(?<=NeteaseCloudMusic_Music_official_)[0-9]+(?:\.[0-9]+){3}(?=_(?:32|64)\.exe)'
 newfiletime = '(?<=NewFileTime\s+)[0-9.]+'
 notepad3 = '(?<=releases/tag/RELEASE_)[0-9.]+'
 notepad4 = '(?<=releases/tag/)v?[0-9r.]+'
@@ -123,6 +125,7 @@ zhumu = true
 
 # match the new version via URL redirection
 [redirecturl]
+boxplayer = "https://github.com/gaozhangmin/boxplayer/releases/latest"
 bypass = "https://www.bypass.cn/api/download?name=Bypass.zip"
 cosbrowser = "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-latest.exe"
 emeditor = "https://support.emeditor.com/en/downloads/latest/portable/64"
@@ -133,6 +136,7 @@ gost = "https://github.com/ginuerzh/gost/releases/latest"
 lightproxy = "https://github.com/alibaba/lightproxy/releases/latest"
 n-m3u8dl-cli = "https://github.com/nilaoda/N_m3u8DL-CLI/releases/latest"
 notepad3 = "https://github.com/rizonesoft/Notepad3/releases/latest"
+notepad4 = "https://github.com/zufuliu/notepad4/releases/latest"
 oss-browser = "https://github.com/aliyun/oss-browser/releases/latest"
 ossutil = "https://github.com/aliyun/ossutil/releases/latest"
 picgo = "https://github.com/Molunerfinn/PicGo/releases/latest"
@@ -159,8 +163,10 @@ ditto = "https://github.com/sabrogden/Ditto"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 everedit = 'http://www.everedit.cn/changelog'
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
+iobitdriverbooster = "https://addremoveprograms.com/vendor/iobit/"
 idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
+mobaxterm = "https://mobaxterm.mobatek.net/download-home-edition.html"
 neatreader = "https://www.neat-reader.cn/downloads/windows"
 ocam = "https://ohsoft.net/update/download.php"
 ossutil = "https://github.com/aliyun/ossutil"
