@@ -16,6 +16,8 @@ import (
 	"github.com/spf13/viper"
 	"github.com/valyala/fasthttp"
 	"github.com/valyala/fasthttp/fasthttpproxy"
+	"golang.org/x/text/encoding/unicode"
+	"golang.org/x/text/transform"
 )
 
 // App echo-scoop/bucket/xx.json
@@ -144,16 +146,15 @@ func compareVersion(version1 string, version2 string) int {
 	for i := len(versionB); i < 4; i++ {
 		versionB = append(versionB, "0")
 	}
-	for i := 0; i < 4; i++ {
+	for i := range 4 {
 		version1, _ := strconv.Atoi(versionA[i])
 		version2, _ := strconv.Atoi(versionB[i])
 		if version1 == version2 {
 			continue
 		} else if version1 > version2 {
 			return 1
-		} else {
-			return -1
 		}
+		return -1
 	}
 	return 0
 }
@@ -174,7 +175,16 @@ func requestLink(url, userAgent string) string {
 	if code != fasthttp.StatusOK {
 		log.Printf("Unexpected status code: %d. Expecting %d", code, fasthttp.StatusOK)
 	}
-	return string(body)
+	return decodeResponseBody(body)
+}
+
+// decodeResponseBody decodes BOM-marked Unicode responses and preserves other bodies.
+func decodeResponseBody(body []byte) string {
+	decoded, _, err := transform.Bytes(unicode.BOMOverride(transform.Nop), body)
+	if err != nil {
+		return string(body)
+	}
+	return string(decoded)
 }
 
 func redirectLink(url string) string {

@@ -38,8 +38,8 @@ fscapture = '(?<=Version\s+)[0-9.]+'
 fsresizer = '(?<=Version\s+)[0-9.]+'
 gost = '(?<=releases/tag/v?)[0-9.]+'
 hbuilderx = "(?<=\"version\":\\s+\")[0-9.]+"
-iobitdriverbooster = '(?<=<h3>Driver Booster</h3>\s*<div[^>]*>\s*<span class="pill">v)[0-9]+(?:\.[0-9]+){3}(?=</span>)'
-iobituninstaller = '(?<=V )[0-9.]+(?= \|)'
+iobitdriverbooster = '(?m)(?<=^Main=)[0-9.]+(?=\r?$)'
+iobituninstaller = '(?m)(?<=^Main=)[0-9.]+(?=\r?$)'
 kodobrowser = '(?<=kodo-browser-Windows-x64-v)[0-9.]+(?=.zip)'
 kodoimport = '(?<=kodoimport_windowsOS_64_v)[0-9.]+(?=.tar.gz)'
 lightproxy = '(?<=releases/tag/v?)[0-9.]+'
@@ -163,7 +163,8 @@ ditto = "https://github.com/sabrogden/Ditto"
 eudic = "http://api.frdic.com/api/v2/appsupport/checkversion"
 everedit = 'http://www.everedit.cn/changelog'
 hbuilderx = "https://download1.dcloud.net.cn/hbuilderx/release.json"
-iobitdriverbooster = "https://addremoveprograms.com/vendor/iobit/"
+iobitdriverbooster = "https://update.iobit.com/infofiles/db/v14/db14_pro.upt"
+iobituninstaller = "https://update.iobit.com/infofiles/iu16/update.upt"
 idm = "https://www.lanzoux.com/b0i6zkze"
 kodobrowser = "https://developer.qiniu.com/kodo/tools/5972/kodo-browser"
 mobaxterm = "https://mobaxterm.mobatek.net/download-home-edition.html"
